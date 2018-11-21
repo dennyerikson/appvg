@@ -1,0 +1,45 @@
+{% extends 'blo/base.html' %}
+{% load static %}
+{% load staticfiles %}
+
+<!-- corpo da lista extendida de base.html--> 
+{% block content %}
+<div class="container">
+        <p>Consulta avançada VG</p>  
+        <form class="input-group" action="" method="GET">
+                <div class="input-group">
+                        <input name="search" type="text" class="form-control" placeholder="Search...CPF - Nome - Sala">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="submit">
+                            <span class="glyphicon glyphicon-search"></span>
+                            </button>
+                        </span>
+                    </div>
+        </form>
+        <br>
+        <br>
+        <br>
+
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Cpf</th>
+              <th>Nome</th>
+              <th>Sala</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+            {% for posts in post %}
+                <tr>
+                    <td>{{posts.cpf}}</td>
+                    <td>{{posts.nome}}</td>
+                    <td>{{posts.sala}}</td>
+                </tr>
+            {% endfor %}
+           
+          </tbody>
+        </table>
+      </div>
+      
+{% endblock %}

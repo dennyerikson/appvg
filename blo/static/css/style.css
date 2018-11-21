@@ -1,0 +1,73 @@
+.img-responsive{
+	float:left;
+	width:50px;
+  position: fixed;
+  left: 15px;
+  margin: 30px 0 0 3px
+}
+
+.jumbotron{
+  margin-bottom: 0;
+  height: 130px;
+  color: tomato;
+
+}
+
+.jumbotron h1{
+  margin-top: 0.5%;
+  position: relative;
+  
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+.row.content {
+    /* height: 1500px; */
+    bottom: 0;
+}
+
+/* Set gray background color and 100% height */
+.sidenav {
+  background-color: #f1f1f1;
+  height: 100%;
+}
+
+/* Set black background color, white text and some padding */
+footer {
+  background-color: #555;
+  color: white;
+  padding: 15px;
+  position:absolute;
+  bottom:0;
+  width:100%;
+  font-size: 10px;
+
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 20px;
+  }
+  .row.content {height: auto;} 
+}
+
+.input-group{
+    top: 5px;
+    position: relative;
+    float: right;
+    width: 330px;
+    right: 1%;
+}
+
+.footer {
+    background-color: #555;
+    color: white;
+    padding: 15px;
+    margin-bottom: 0px;
+  }
+
+thead{
+  color: tomato;
+  z-index: 1;
+}

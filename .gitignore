@@ -5,3 +5,5 @@ myvenv
 /static
 .DS_Store
 .vscode
+VG24.csv
+db.sqlite3

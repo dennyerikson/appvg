@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from .models import *
-from django.db.models import Q
+from django.db.models import Q, Count
 
 # Create your views here.
 def home(request):
@@ -16,5 +16,7 @@ def home(request):
     else:
         post = Post.objects.all()
 
-    context = {'post':post}
+    total = Post.objects.all().count()
+
+    context = {'post':post, 'total':total}
     return render(request, 'blo/home.html', context)

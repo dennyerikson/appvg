@@ -24,9 +24,8 @@
         <br>
         <br>
                 <p> 
-                  <i id="i" class="glyphicon glyphicon-list"></i> Candidatos do vestibular 
-      
-                  <i id="i" class="glyphicon glyphicon-user"></i> {{total}}
+                  <i id="i" class="glyphicon glyphicon-list"></i>Lista Candidatos do vestibular     
+                  
 
                   <i id="i" class="glyphicon glyphicon-calendar"></i> 24/11
                 </p>
@@ -46,9 +45,9 @@
 
             {% for posts in post %}
                 <tr>
-                    <td><i class="glyphicon glyphicon-credit-card"></i> {{posts.cpf}} </td>
-                    <td><i class="glyphicon glyphicon-user"></i> {{posts.nome}}</td>
-                    <td><i class="glyphicon glyphicon-home"></i> {{posts.sala}}</td>
+                    <td>{{posts.cpf}} </td>
+                    <td> {{posts.nome}}</td>
+                    <td>{{posts.sala}}</td>
                 </tr>
             {% endfor %}
 
@@ -56,5 +55,103 @@
         </table>
         </div>
       </div>
+
+      <script>
+
+        function sizeOfThings(){
+          var windowWidth = window.innerWidth;
+          var windowHeight = window.innerHeight;
+          
+          var screenWidth = screen.width;
+          var screenHeight = screen.height;
+          
+          var msgW = windowWidth + 'x' + windowHeight;
+          var msgS = screenWidth + 'x' + screenHeight;
+
+          // alert('screenWidth: ' + msgS + "\nwindowWidth: " + msgW)
+
+        };
+
+        sizeOfThings();
+
+        window.addEventListener('resize', function(){
+          sizeOfThings();
+        });
+      
+      </script>
+      <!-- MODAL BOOTSTRAP -->
+      <div class="container">
+        <!--modal-->
+        <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog modal-sm">
+            <!--Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title"><i class="glyphicon glyphicon-info-sign"></i> Informações do VG</h4>              
+
+              </div>
+              <div class="modal-body">
+                <p><i id="i" class="glyphicon glyphicon-user"></i> Total Candiadatos {{total}}</p>
+                {% for salas in sala %}
+                  <p><i id="i" class="glyphicon glyphicon-home"></i> Total sala {{ salas.sala}}
+                    <i id="i" class="glyphicon glyphicon-user"></i> {{ salas.value_cpf }}
+                  </p>
+                {% endfor %}
+
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn" data-dismiss="modal"><i class="glyphicon glyphicon-ok"></i> Ok, entendi</button>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+      <!-- MODAL BOOTSTRAP -->
+
+
+
+      <!-- Float button -->
+      <div id="div2" class="zoom">
+          <a class="zoom-fab zoom-btn-large" id="zoomBtn" data-toggle="modal" data-target="#myModal">
+              <img src="https://img.icons8.com/material-rounded/50/ffffff/about.png" width="30"></a>
+
+      </div>
+      <script>
+          $('#zoomBtn').click(function() {
+              $('.zoom-btn-sm').toggleClass('scale-out');
+
+              if (!$('.zoom-card').hasClass('scale-out')) {
+                  $('.zoom-card').toggleClass('scale-out');
+              }
+          });
+
+          $('.zoom-btn-sm').click(function() {
+          var btn = $(this);
+          var card = $('.zoom-card');
+          if ($('.zoom-card').hasClass('scale-out')) {
+              $('.zoom-card').toggleClass('scale-out');
+          }
+          if (btn.hasClass('zoom-btn-person')) {
+              // card.css('background-color', '#d32f2f');
+
+          } else if (btn.hasClass('zoom-btn-doc')) {
+              card.css('background-color', '#fbc02d');
+          } else if (btn.hasClass('zoom-btn-tangram')) {
+              card.css('background-color', '#388e3c');
+          } else if (btn.hasClass('zoom-btn-report')) {
+              card.css('background-color', '#1976d2');
+          } else {
+              card.css('background-color', '#7b1fa2');
+          }
+          });        
+      </script>
+      <!-- Float button -->
 
 {% endblock %}

@@ -7,3 +7,4 @@ myvenv
 .vscode
 VG24.csv
 db.sqlite3
+*.sqlite3

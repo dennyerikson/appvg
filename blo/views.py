@@ -18,5 +18,11 @@ def home(request):
 
     total = Post.objects.all().count()
 
-    context = {'post':post, 'total':total}
+    # minha query onde obtenho os dados das salas
+    sala = Post.objects.all()\
+        .values('sala')\
+        .annotate(value_sala=Count('sala'), value_cpf=Count('cpf') )
+    print(sala)
+
+    context = {'post':post, 'total':total, 'sala':sala}
     return render(request, 'blo/home.html', context)

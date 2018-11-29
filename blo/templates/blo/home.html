@@ -1,9 +1,15 @@
 {% extends 'blo/base.html' %}
 {% load static %}
 {% load staticfiles %}
+{% load poll_extras %}
 
 <!-- corpo da lista extendida de base.html-->
 {% block content %}
+<!-- <head>
+  <link rel="stylesheet" media="screen and (min-width: 0px)" href="{% static 'css/small.css' %}">
+  <link rel="stylesheet" media="screen and (min-width: 640px)" href="{% static 'css/mediun.css' %}">
+  <link rel="stylesheet" media="screen and (min-width: 1000px)" href="{% static 'css/full.css' %}">
+</head> -->
 <br>
 <br>
 <br>
@@ -32,27 +38,38 @@
         <table class="table table-striped">
           <thead>
             <tr>
+              <th><i class="glyphicon glyphicon-ok"></i></th>
               <th><i class="glyphicon glyphicon-credit-card"></i> Cpf</th>
               <th><i class="glyphicon glyphicon-user"></i> Nome</th>
               <th><i class="glyphicon glyphicon-home"></i> Sala</th>
+              <!-- <th><i class="glyphicon glyphicon-education"></i> Curso</th> -->
             </tr>
           </thead>
           </table>
-        <div class="table-overflow">
-        <table class="table table-striped">
+        <div id="table" class="table-overflow">
+          <table class="table table-striped">
 
-          <tbody>
+            <tbody>
+              <!-- <style>td{white-space: pre-wrap;}</style> -->
+              {% for posts in post %}
+                  <tr>
+                      <form action="" method="POST">{% csrf_token %}
+                        <td>
+                          <input onClick="this.form.submit();" type="checkbox" name="ckeckbox" value="{{ posts.cpf }}" {% if posts.confirm %}checked{% endif %}/>
+                        </td>
+                      </form>
 
-            {% for posts in post %}
-                <tr>
-                    <td>{{posts.cpf}} </td>
-                    <td> {{posts.nome}}</td>
-                    <td>{{posts.sala}}</td>
-                </tr>
-            {% endfor %}
+                      <td>{{posts.cpf}} </td>
+                      <td> {{posts.nome|display_name_tag}}</td>
+                      <!-- <td> {{posts.nome}}</td> -->
+                      <td>{{posts.sala}}</td>
+                      <td><i class="glyphicon glyphicon-plus-sign"></i></td>
+                                      
+                  </tr>
+              {% endfor %}
 
-          </tbody>
-        </table>
+            </tbody>
+          </table>
         </div>
       </div>
 
@@ -65,8 +82,18 @@
           var screenWidth = screen.width;
           var screenHeight = screen.height;
           
-          var msgW = windowWidth + 'x' + windowHeight;
-          var msgS = screenWidth + 'x' + screenHeight;
+          // var msgW = windowWidth + 'x' + windowHeight;
+          // var msgS = screenWidth + 'x' + screenHeight;
+
+          var msgW = windowWidth;
+          var msgS = screenWidth;
+
+          if(msgW < 640){
+            document.getElementById("table").style.maxHeight ='auto';
+          }
+          else{
+            document.getElementById("table").style.maxHeight ='350px';
+          }
 
           // alert('screenWidth: ' + msgS + "\nwindowWidth: " + msgW)
 
@@ -92,7 +119,7 @@
 
               </div>
               <div class="modal-body">
-                <p><i id="i" class="glyphicon glyphicon-user"></i> Total Candiadatos {{total}}</p>
+                <p><i id="i" class="glyphicon glyphicon-list-alt"></i> Total Candiadatos <i id="i" class="glyphicon glyphicon-user"></i> {{total}}</p>
                 {% for salas in sala %}
                   <p><i id="i" class="glyphicon glyphicon-home"></i> Total sala {{ salas.sala}}
                     <i id="i" class="glyphicon glyphicon-user"></i> {{ salas.value_cpf }}

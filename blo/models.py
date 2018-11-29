@@ -5,7 +5,10 @@ class Post(models.Model):
     cpf = models.CharField(max_length=11)
     nome = models.CharField(max_length=150)
     sala = models.CharField(max_length=20)
+    confirm = models.BooleanField(
+        default=False
+        )
 
     def __str__(self):
-        return self.cpf
+        return self.sala
     

@@ -48,7 +48,6 @@
           </table>
         <div id="table" class="table-overflow">
           <table class="table table-striped">
-
             <tbody>
               <!-- <style>td{white-space: pre-wrap;}</style> -->
               {% for posts in post %}
@@ -63,7 +62,9 @@
                       <td> {{posts.nome|display_name_tag}}</td>
                       <!-- <td> {{posts.nome}}</td> -->
                       <td>{{posts.sala}}</td>
-                      <td><i class="glyphicon glyphicon-plus-sign"></i></td>
+                      <!-- <td><a style="text-decoration:none" href="#">+</a></i></td> -->
+                      <td><a href="#" data-toggle="modal" data-target="#exampleModal" data-whateverdetalhes="{{posts.curso}}" >+</a></td>
+                      
                                       
                   </tr>
               {% endfor %}
@@ -72,6 +73,54 @@
           </table>
         </div>
       </div>
+
+      <!-- MODAL DADOS -->
+      <style>
+        #detalhes{
+          border: 0px solid white;
+          width:100%;
+          height:40px;
+          font-size: 16px;
+          }
+      </style>
+      <div class="container">
+          <div class="modal fade" id="exampleModal" role="dialog">
+            <div class="modal-dialog modal-sm">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title"><i class="glyphicon glyphicon-info-sign"></i> Informações do Candidato</h4>              
+  
+                </div>
+                <div class="modal-body">
+                  <h2>Curso</h2>
+                  <textarea name="detalhes" class="form-control" id="detalhes"></textarea>
+                </div>
+  
+                <div class="modal-footer">
+                  <button type="button" class="btn" data-dismiss="modal"><i class="glyphicon glyphicon-ok"></i> Ok, entendi</button>
+  
+                </div>
+  
+              </div>
+  
+            </div>
+  
+          </div>
+  
+        </div>
+        <script type="text/javascript">
+          $('#exampleModal').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget) // Button that triggered the modal
+            var recipientdetalhes = button.data('whateverdetalhes')
+            // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+            // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+            var modal = $(this)
+            modal.find('#detalhes').val(recipientdetalhes)
+            
+          })
+        </script>
+      <!-- MODAL DADOS -->
 
       <script>
 
@@ -106,6 +155,7 @@
         });
       
       </script>
+
       <!-- MODAL BOOTSTRAP -->
       <div class="container">
         <!--modal-->
@@ -146,9 +196,22 @@
 
       <!-- Float button -->
       <div id="div2" class="zoom">
-          <a class="zoom-fab zoom-btn-large" id="zoomBtn" data-toggle="modal" data-target="#myModal">
-              <img src="https://img.icons8.com/material-rounded/50/ffffff/about.png" width="30"></a>
+          <a class="zoom-fab zoom-btn-large" id="zoomBtn">
+              <img src="https://img.icons8.com/ios/50/ffffff/menu-filled.png" width="30"></a>
+              <ul class="zoom-menu">                
+                <!-- <li><a class="zoom-fab zoom-btn-sm zoom-btn-doc scale-transition scale-out">2</a></li> -->
+                <!--Sobre-->
+                <li><a class="zoom-fab zoom-btn-sm zoom-btn-feedback scale-transition scale-out" data-toggle="modal" data-target="#myModal">
+                        <img src="https://img.icons8.com/material-rounded/50/ffffff/about.png" width="26"></a></li>
+               
+                <!--Laboratórios-->
+                <li><a class="zoom-fab zoom-btn-sm zoom-btn-tangram scale-transition scale-out">
+                        <img src="https://img.icons8.com/ios/50/ffffff/workstation-filled.png"width="26"></a></li>
 
+                <!--Agendar-->
+                <li><a href="#" data-toggle="modal" data-target="#modalCandidatos" class="zoom-fab zoom-btn-sm zoom-btn-person scale-transition scale-out">
+                        <img src="https://img.icons8.com/ios/50/ffffff/plus-math-filled.png" width="30"></a></li>
+            </ul>
       </div>
       <script>
           $('#zoomBtn').click(function() {
@@ -180,5 +243,97 @@
           });        
       </script>
       <!-- Float button -->
+
+      <!-- MODAL CANDIDATOS -->
+ <!--Modal para adicionar evento-->
+ <div class="container">          
+            
+    <!-- Modal -->
+    <div class="modal fade" id="modalCandidatos" role="dialog" data-backdrop="static"> <!--data-backdrop="static" trava modal-->
+        <div class="modal-dialog">
+        
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">                    
+            <h4 class="modal-title">Novo Candidato</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+
+                <!-- <script type="text/javascript" src="/admin/jsi18n/"></script>
+                <script type="text/javascript" src="{% static 'admin/js/core.js' %}"></script>
+                <script type="text/javascript" src="{% static 'admin/js/admin/RelatedObjectLookups.js' %}"></script>
+                <script type="text/javascript" src="{% static 'admin/js/vendor/jquery/jquery.min.js' %}"></script>
+                <script type="text/javascript" src="{% static 'admin/js/jquery.init.js' %}"></script>
+                <script type="text/javascript" src="{% static 'admin/js/actions.min.js' %}"></script>
+                <script type="text/javascript" src="{% static 'admin/js/calendar.js' %}"></script>
+                <script type="text/javascript" src="{% static 'admin/js/admin/DateTimeShortcuts.js' %}"></script> -->
+
+                <!-- <script>
+                 $('#AdminDateWidget').AdminDateWidget({
+                    container:'#myModal',                            
+                    });
+                </script> -->
+
+                <!--Form do agendamento-->
+                <div class="login-page">
+                    <div class="form">
+
+                        <form class="pure-form pure-form-aligned" method="POST">
+                            {% csrf_token %}
+
+                            <fieldset>
+                                {{ form.non_field_errors }}
+
+                                {% for field in form %}
+                                    <div class="pure-control-group">
+                                        <div class="custon-select">
+                                            {{ field.label_tag}}
+                                            {{field}}
+                                            {{field.errors}}
+                                        </div>
+                                    </div>
+                                {% endfor %}
+
+                                <button class="btn btn-info btn-block"  id="btnim" type="submit" class="button">Salvar</button>
+
+                            </fieldset>
+                        </form>
+
+                    </div>
+
+                </div>
+
+                <script>
+                    $(function () {
+                        $('.datetime-input').datetimepicker({
+                            format:'YYYY-MM-DD',
+                        })
+                    });
+
+                    var label = document.querySelector('label');
+                    var input = document.querySelector('input');
+
+                    label.onclick = function () {
+                        label.style.display = 'none';
+                        input.focus();
+                    }
+                    input.onblur = function () {
+                        if(!this.value) label.style.display = 'block';
+                    }
+                </script>
+
+            </div>
+            <!-- <div class="modal-footer">
+                <button class="btn btn-info btn-block"  id="btnim" type="submit" class="button">Salvar</button>
+                <button type="button" class="btn btn-block" data-dismiss="modal">Cancelar</button>
+            </div> -->
+        </div>
+        
+        </div>
+    </div>
+    
+</div><!--Fim Modal-->
+      <!-- MODAL CANDIDATOS -->
 
 {% endblock %}

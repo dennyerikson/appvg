@@ -1,7 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import *
 from django.db.models import Q, Count
 from .json_print import Json_Get
+from .forms import CandidatosForm
 
 
 # Create your views here.
@@ -41,7 +42,18 @@ def home(request):
         .annotate(value_sala=Count('sala'), value_cpf=Count('cpf') )
     
 
-    context = {'post':post, 'total':total, 'sala':sala}
+    if request.method == 'POST':
+        form = CandidatosForm(request.POST)
+        if form.is_valid():
+            q = form.save(commit=False)
+            q.save()
+            return redirect('/')
+    else:
+        form = CandidatosForm()
+
+
+
+    context = {'post':post, 'total':total, 'sala':sala, 'form':form}
     return render(request, 'blo/home.html', context)
 
 

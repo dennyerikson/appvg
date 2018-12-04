@@ -164,11 +164,71 @@ i{
   line-height: 60px;
 }
 
+.zoom-menu {
+  position: absolute;
+  right: 70px;
+  left: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100%;
+  width: 500px;
+  list-style: none;
+  text-align: right;
+}
+
+.zoom-menu li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.zoom-card {
+  position: absolute;
+  right: 150px;
+  bottom: 70px;
+  transition: box-shadow 0.25s;
+  padding: 24px;
+  border-radius: 2px;
+  background-color: #009688;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  color: #FFF;
+}
+
 .zoom-card ul {
   -webkit-padding-start: 0;
   list-style: none;
   text-align: left;
 }
+
+/* cores para buttons */
+.zoom-btn-person { background-color: tomato; }
+
+.zoom-btn-person:hover { background-color: #b23620; }
+
+.zoom-btn-doc { background-color: tomato; }
+
+.zoom-btn-doc:hover { background-color: #b23620; }
+
+.zoom-btn-tangram { background-color: tomato; }
+
+.zoom-btn-tangram:hover { background-color: #b23620; }
+
+.zoom-btn-report { background-color: tomato; }
+
+.zoom-btn-report:hover { background-color: #b23620; }
+
+.zoom-btn-feedback { background-color: tomato; }
+
+.zoom-btn-feedback:hover { background-color: #b23620; }
+
+/* escala para os buttons */
+.scale-transition { transition: transform 0.3s cubic-bezier(0.53, 0.01, 0.36, 1.63) !important; }
+
+.scale-transition.scale-out {
+transform: scale(0);
+transition: transform 0.2s !important;
+}
+
+.scale-transition.scale-in { transform: scale(1); }
 
 /* escala para os buttons */
 .scale-transition { transition: transform 0.3s cubic-bezier(0.53, 0.01, 0.36, 1.63) !important; }
@@ -181,3 +241,80 @@ transition: transform 0.2s !important;
 .scale-transition.scale-in { transform: scale(1); }
 
 /* style float button */
+
+
+.table p{
+  font-size: 22px;
+  color: tomato; 
+  font-weight: bold;
+}
+
+
+/* estilo do form */
+/* @import url(https://fonts.googleapis.com/css?family=Roboto:300); */
+
+.form {
+  position: relative;
+  /*  z-index: 1;*/
+  background: #FFFFFF;
+  max-width: auto;
+  padding: 10px;
+  text-align: left;
+  /* box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); */
+  }
+  .form label{
+    position: left;
+  }
+  .form input {
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  height: 16px;
+  border: 0;
+  margin: 0 0 11px;
+  padding: 11px;
+  font-size: 11px;
+  }
+  .form button {
+  text-transform: uppercase;
+  outline: 0;
+  background:tomato;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 11px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  }
+  .form button:hover,.form button:active,.form button:focus {
+  /* background: rgb(20, 20, 20); */
+  background: #b23620;
+  
+  }
+  
+  .pure-control-group #id_details{
+    width: 100%;
+    height: 70px;
+  }
+  
+  .form label{
+    font-size: 11px;
+    position: relative;
+  }
+  
+  .form select{
+    width: 70%;
+    float: right;
+    position: relative;
+    background-color: white;
+    border: 2px solid;
+    border-color: transparent transparent  tomato transparent ;
+  
+  }
+  
+  .errorlist li{
+    color: tomato;
+  }
+  /* estilo do form */

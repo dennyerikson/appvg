@@ -1,0 +1,52 @@
+{% load static %}
+{% load staticfiles %}
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- <a href="https://icons8.com">Icon pack by Icons8</a> -->
+    <title>VG</title>
+</head>
+
+<body>
+<style> .navbar_style{background-color: tomato; color: white}</style>
+<div class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+        <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+            <img src="https://img.icons8.com/ios/50/ffffff/menu-filled.png" width="30">
+        </button>
+        <div class="collapse navbar-collapse navHeaderCollapse">
+            <ul class="nav navbar-nav navbar-right">
+                
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/post_graphs">Total Candidatos</a></li>
+                <li><a href="/confirm_graphs" >Total confirmados</a></li>
+                <li class="active"><a href="/print_graphs" >Total de impressão</a></li>
+
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+    <!-- corpo da lista -->  
+    {% block content %}  
+    {% endblock %}  
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.src.js"></script>
+<script src="https://code.highcharts.com/modules/drilldown.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="{% static 'js/curso_graphic.js' %}"></script>
+</html>

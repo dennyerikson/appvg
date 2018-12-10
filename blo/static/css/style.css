@@ -49,7 +49,7 @@
 
 /* Set black background color, white text and some padding */
 footer {
-  background-color: #555;
+  background-color:  rgba(39, 39, 39);
   color: white;
   padding: 15px;
   position: fixed;
@@ -68,20 +68,15 @@ footer {
   .row.content {height: auto;}
 }
 
-.input-group{
-    position: fixed;
-    top: 90px;
-    width: 330px;
-    right: 1%;
-    z-index: 3;
-}
-
 .footer {
-    background-color: #555;
+    background-color: rgba(39, 39, 39);
     color: white;
     padding: 15px;
-    margin-bottom: 0px;
   }
+.footer p {
+  margin: 15px 0 0 3px;
+  position: relative;
+}
 
 thead{
   color: tomato;
@@ -122,7 +117,7 @@ i{
 /* style float button */
 .zoom {
   animation-name: example;
-  animation-duration: 3s;
+  animation-duration: 1s;
   animation-iteration-count: 1;
   animation-timing-function: ease;
 
@@ -134,7 +129,7 @@ i{
 }
 /* Standard syntax */
 @keyframes example {
-  75%  {bottom:300px;}
+  75%  {bottom:175px;}
 
   }
 .zoom-fab {
@@ -318,3 +313,112 @@ transition: transform 0.2s !important;
     color: tomato;
   }
   /* estilo do form */
+
+
+
+  /* style float button */
+.zoom2 {
+  animation-name: example;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+
+  position: fixed;
+  bottom: 15px;
+  left: 10px;
+  height: 70px;
+  z-index: 100;
+}
+/* Standard syntax */
+@keyframes example {
+  75%  {bottom:175px;}
+
+  }
+.zoom-fab2 {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  background-color: tomato;
+  vertical-align: middle;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.2s ease-out;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  color: #FFF;
+}
+
+.zoom-fab2:hover {
+  background-color: #b23620;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+}
+
+.zoom-btn-large2 {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+}
+
+.zoom-menu2 {
+  position: absolute;
+  right: 70px;
+  left: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100%;
+  width: 500px;
+  list-style: none;
+  text-align: right;
+}
+
+/* escala para os buttons */
+.scale-transition { transition: transform 0.3s cubic-bezier(0.53, 0.01, 0.36, 1.63) !important; }
+
+.scale-transition.scale-out {
+transform: scale(0);
+transition: transform 0.2s !important;
+}
+
+.scale-transition.scale-in { transform: scale(1); }
+
+/* escala para os buttons */
+.scale-transition { transition: transform 0.3s cubic-bezier(0.53, 0.01, 0.36, 1.63) !important; }
+
+.scale-transition.scale-out {
+transform: scale(0);
+transition: transform 0.2s !important;
+}
+
+.scale-transition.scale-in { transform: scale(1); }
+
+/* style float button */
+
+
+
+#ModalSearch {
+  text-align: center;
+  padding: 0!important;
+}
+
+#ModalSearch:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+#ModalSearch .modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+#ModalSearch .input-group{
+  position: fixed;
+  top: 97px;
+  width: 90%;
+  right: 1%;
+}

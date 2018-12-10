@@ -9,7 +9,8 @@ class Post(models.Model):
     confirm = models.BooleanField(
         default=False
         )
-
+    SALA = 'SALA'
+    CONFIRM = 'CONFIRM'
     def __str__(self):
         return self.sala
 

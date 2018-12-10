@@ -1,9 +1,9 @@
 from django.shortcuts import render, redirect
 from .models import *
-from django.db.models import Q, Count
+from django.db.models import Q, Count, Sum
 from .json_print import Json_Get
 from .forms import CandidatosForm
-
+from django.db.models.sql import AggregateQuery
 
 # Create your views here.
 def home(request):
@@ -29,18 +29,25 @@ def home(request):
         post = Post.objects.filter(
             Q(cpf=search) |
             Q(nome__contains=search)|
-            Q(sala=search)
+            Q(sala=search) |
+            Q(curso__contains=search) 
         )
     else:
-        post = Post.objects.all()
+        # post = Post.objects.select_related().all()
+        post = ''
 
     total = Post.objects.all().count()
 
-    # minha query onde obtenho os dados das salas
+    #minha query onde obtenho os dados das salas
     sala = Post.objects.all()\
         .values('sala')\
-        .annotate(value_sala=Count('sala'), value_cpf=Count('cpf') )
-    
+        .annotate(
+            value_cpf=Count('cpf'),
+            value_confirm=Count('confirm', filter=Q(confirm=True)),
+        )
+    print(sala)
+    total_confirm = Post.objects.filter(confirm=True).count()     
+
 
     if request.method == 'POST':
         form = CandidatosForm(request.POST)
@@ -53,7 +60,7 @@ def home(request):
 
 
 
-    context = {'post':post, 'total':total, 'sala':sala, 'form':form}
+    context = {'post':post, 'total':total, 'sala':sala, 'form':form, 'total_confirm':total_confirm}
     return render(request, 'blo/home.html', context)
 
 
@@ -62,3 +69,11 @@ def getNome(nome):
     nome = str(nome[0]) +' '+str(nome[-1])
     return nome
 
+def post_graphs(request):
+    return render(request, 'blo/post_graphs.html')
+
+def confirm_graphs(request):
+    return render(request, 'blo/confirm_graphs.html')
+
+def print_graphs(request):
+    return render(request, 'blo/print_graphs.html')

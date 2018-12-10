@@ -15,18 +15,37 @@
 <br>
 <br>
 <br>
+<!-- <style> .navbar_style{background-color: tomato; color: white}</style>
+<div class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+        <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+            <img src="https://img.icons8.com/ios/50/ffffff/menu-filled.png" width="30">
+        </button>
+        <div class="collapse navbar-collapse navHeaderCollapse">
+            <ul class="nav navbar-nav navbar-right">
+                
+                <li><a href="#">Dados</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#myModal">Informações</a></li>
+                <li class="active"><a href="#" data-toggle="modal" data-target="#modalCandidatos" >Cadastrar</a></li>
+
+            </ul>
+        </div>
+
+    </div>
+
+</div> -->
 <div class="container">
 
-        <form class="input-group" action="" method="GET">
+        <!-- <form class="input-group" action="" method="GET">
                 <div class="input-group">
-                        <input name="search" type="text" class="form-control" placeholder="Search...CPF - Nome - Sala">
+                        <input name="search" type="text" class="form-control" placeholder="Search...CPF - Nome - Sala" autofocus>
                         <span class="input-group-btn">
                             <button class="btn btn-default" type="submit">
                             <span class="glyphicon glyphicon-search"></span>
                             </button>
                         </span>
                     </div>
-        </form>
+        </form> -->
         <br>
         <br>
                 <p> 
@@ -39,7 +58,7 @@
           <thead>
             <tr>
               <th><i class="glyphicon glyphicon-ok"></i></th>
-              <th><i class="glyphicon glyphicon-credit-card"></i> Cpf</th>
+              <th id="cpf"><i class="glyphicon glyphicon-credit-card"></i> Cpf</th>
               <th><i class="glyphicon glyphicon-user"></i> Nome</th>
               <th><i class="glyphicon glyphicon-home"></i> Sala</th>
               <!-- <th><i class="glyphicon glyphicon-education"></i> Curso</th> -->
@@ -169,10 +188,14 @@
 
               </div>
               <div class="modal-body">
-                <p><i id="i" class="glyphicon glyphicon-list-alt"></i> Total Candiadatos <i id="i" class="glyphicon glyphicon-user"></i> {{total}}</p>
+                <p><i id="i" class="glyphicon glyphicon-list-alt"></i> Candidatos 
+                    <i id="i" class="glyphicon glyphicon-user"></i> {{total}}
+                    <i id="i" class="glyphicon glyphicon-ok"></i> {{total_confirm}}
+                </p>
                 {% for salas in sala %}
                   <p><i id="i" class="glyphicon glyphicon-home"></i> Total sala {{ salas.sala}}
-                    <i id="i" class="glyphicon glyphicon-user"></i> {{ salas.value_cpf }}
+                    <i id="i" class="glyphicon glyphicon-user"></i> {{ salas.value_cpf }}       
+                    <i id="i" class="glyphicon glyphicon-ok"></i> {{ salas.value_confirm|default:0 }}
                   </p>
                 {% endfor %}
 
@@ -205,8 +228,8 @@
                         <img src="https://img.icons8.com/material-rounded/50/ffffff/about.png" width="26"></a></li>
                
                 <!--Laboratórios-->
-                <li><a class="zoom-fab zoom-btn-sm zoom-btn-tangram scale-transition scale-out">
-                        <img src="https://img.icons8.com/ios/50/ffffff/workstation-filled.png"width="26"></a></li>
+                <li><a href="/post_graphs" class="zoom-fab zoom-btn-sm zoom-btn-tangram scale-transition scale-out">
+                        <img src="https://img.icons8.com/metro/26/ffffff/positive-dynamic.png" width="26"></a></li>
 
                 <!--Agendar-->
                 <li><a href="#" data-toggle="modal" data-target="#modalCandidatos" class="zoom-fab zoom-btn-sm zoom-btn-person scale-transition scale-out">
@@ -244,6 +267,57 @@
       </script>
       <!-- Float button -->
 
+      <!-- Float button  SEARCH-->
+      <div id="div3" class="zoom2" >
+        <a class="zoom-fab2 zoom-btn-large2" id="zoomBtn2">
+            <img src="https://img.icons8.com/windows/50/ffffff/search.png" width="30"
+            data-toggle="modal" data-target="#ModalSearch"></a>
+
+    </div>
+    <script>
+        $('#zoomBtn2').click(function() {
+            $('.zoom-btn-sm2').toggleClass('scale-out');
+
+            if (!$('.zoom-card2').hasClass('scale-out')) {
+                $('.zoom-card2').toggleClass('scale-out');
+            }
+        });
+
+        $('.zoom-btn-sm2').click(function() {
+        var btn = $(this);
+        var card = $('.zoom-card');
+        if ($('.zoom-card').hasClass('scale-out')) {
+            $('.zoom-card').toggleClass('scale-out');
+        }
+        if (btn.hasClass('zoom-btn-person')) {
+            // card.css('background-color', '#d32f2f');
+
+        } else if (btn.hasClass('zoom-btn-doc')) {
+            card.css('background-color', '#fbc02d');
+        } else if (btn.hasClass('zoom-btn-tangram')) {
+            card.css('background-color', '#388e3c');
+        } else if (btn.hasClass('zoom-btn-report')) {
+            card.css('background-color', '#1976d2');
+        } else {
+            card.css('background-color', '#7b1fa2');
+        }
+        });  
+
+        
+5
+6
+7
+$(document).ready(function(){
+  $(document).keypress(function(e){
+	if(e.wich == 13 || e.keyCode == 13){
+		$("#ModalSearch").modal();
+	}
+  })
+})
+
+;     
+    </script>
+    <!-- Float button -->
       <!-- MODAL CANDIDATOS -->
  <!--Modal para adicionar evento-->
  <div class="container">          
@@ -335,5 +409,78 @@
     
 </div><!--Fim Modal-->
       <!-- MODAL CANDIDATOS -->
+
+            <!-- MODAL SEARCH -->
+
+            <div id="ModalSearch" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title"><i class="glyphicon glyphicon-info-sign"></i> Informações do VG</h4>              
+      
+                  </div>
+                  <div class="modal-body">
+                      <form class="input-group" action="" method="GET">
+                          <div class="input-group">
+                                  <input name="search" type="text" class="form-control" placeholder="Search...CPF - Nome - Sala" autofocus>
+                                  <span class="input-group-btn">
+                                      <button class="btn btn-default" type="submit">
+                                      <span class="glyphicon glyphicon-search"></span>
+                                      </button>
+                                  </span>
+                              </div>
+                        </form>
+                  </div>
+                  <br>
+                  <br>
+                  <div class="modal-footer">
+                    
+                  </div>
+                </div>
+              </div>
+          </div>
+
+
+            <!-- <div class="container">
+              
+              <div class="modal fade" id="ModalSearch" role="dialog">
+                <div class="modal-dialog modal-sm">
+                
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title"><i class="glyphicon glyphicon-info-sign"></i> Informações do VG</h4>              
+      
+                    </div>
+                    <div class="modal-body">
+                      <form class="input-group" action="" method="GET">
+                        <div class="input-group">
+                                <input name="search" type="text" class="form-control" placeholder="Search...CPF - Nome - Sala" autofocus>
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="submit">
+                                    <span class="glyphicon glyphicon-search"></span>
+                                    </button>
+                                </span>
+                            </div>
+                      </form>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="modal-footer">                      
+                      
+                    </div>
+      
+                  </div>
+      
+                </div>
+      
+              </div>
+      
+            </div> -->
+            <!-- MODAL SEARCH -->
 
 {% endblock %}

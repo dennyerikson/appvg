@@ -65,9 +65,9 @@ def confirm_curN_js(request):
 
 def print_js(request):
     lista = [
-        {'data':'VG-20/10/18', 'impresso':(600 * 6)},
-        {'data':'VG-24/11/18', 'impresso':(800 * 6)},
-        {'data':'VG-19/01/19', 'impresso':(350 * 6)},
+        {'data':'VG-20/10/18', 'impresso':(600 * 8)},
+        {'data':'VG-24/11/18', 'impresso':(600 * 8)},
+        {'data':'VG-19/01/19', 'impresso':(350 * 8)},
         ]
     return JsonResponse({'print':lista})
 
@@ -77,3 +77,8 @@ def post_serializer(item):
 
 def conf_serializer(item):
     return {'sala':'Sala '+item['sala'], 'confirmados':item['confirm']}
+
+"""
+vg-20/10 inscritos 5166 confirmados: presentes:305
+vg-24/11 inscritos 6000 confirmados:600 presentes:415
+"""

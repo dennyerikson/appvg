@@ -49,19 +49,30 @@
         <br>
         <br>
                 <p> 
-                  <i id="i" class="glyphicon glyphicon-list"></i>Lista Candidatos do vestibular     
+                  <!-- <i id="i" class="glyphicon glyphicon-list"></i>Lista Candidatos do vestibular      -->
+                  <i id="i" class="glyphicon glyphicon-list"></i>Lista Relação de sala    
                   
 
-                  <i id="i" class="glyphicon glyphicon-calendar"></i> 24/11
+                  <!-- <i id="i" class="glyphicon glyphicon-calendar"></i> 24/11 -->
                 </p>
         <table class="table table-striped">
           <thead>
             <tr>
-              <th><i class="glyphicon glyphicon-ok"></i></th>
+              <!-- <th><i class="glyphicon glyphicon-ok"></i></th>
               <th id="cpf"><i class="glyphicon glyphicon-credit-card"></i> Cpf</th>
               <th><i class="glyphicon glyphicon-user"></i> Nome</th>
-              <th><i class="glyphicon glyphicon-home"></i> Sala</th>
-              <!-- <th><i class="glyphicon glyphicon-education"></i> Curso</th> -->
+              <th><i class="glyphicon glyphicon-home"></i> Sala</th> -->
+
+
+              <!-- <th><i class="glyphicon glyphicon-ok"></i></th> -->
+              <th id="cpf"><i class="glyphicon glyphicon-education"></i> Curso</th>
+              <th><i class="glyphicon glyphicon-time"></i> Periodo</th>
+              <th><i class="glyphicon glyphicon-pencil"></i> Disciplina</th>
+              <!-- <th><i class="glyphicon glyphicon-home"></i> Sala</th>
+              <th><i class="glyphicon glyphicon-home"></i> Dia</th>
+              <th><i class="glyphicon glyphicon-home"></i> Série</th>
+              <th><i class="glyphicon glyphicon-education"></i> Professor</th> -->
+              <th><i class="glyphicon glyphicon-plus"></i> Detalhes</th>
             </tr>
           </thead>
           </table>
@@ -69,20 +80,36 @@
           <table class="table table-striped">
             <tbody>
               <!-- <style>td{white-space: pre-wrap;}</style> -->
-              {% for posts in post %}
+              {% for horario in horarios %}
                   <tr>
-                      <form action="" method="POST">{% csrf_token %}
+                      <!-- <form action="" method="POST">{% csrf_token %}
                         <td>
                           <input onClick="this.form.submit();" type="checkbox" name="ckeckbox" value="{{ posts.cpf }}" {% if posts.confirm %}checked{% endif %}/>
                         </td>
-                      </form>
-
-                      <td>{{posts.cpf}} </td>
+                      </form> -->
+                      
+                      <!-- VESTIBULAR -->
+                      <!-- <td>{{posts.cpf}} </td>
                       <td> {{posts.nome|display_name_tag}}</td>
-                      <!-- <td> {{posts.nome}}</td> -->
+                    
                       <td>{{posts.sala}}</td>
+                      <td><a href="#" data-toggle="modal" data-target="#exampleModal" data-whateverdetalhes="{{posts.curso}}" >+</a></td> -->
+                      
+                      <!-- AULA -->
+                      <td>{{horario.curso}} </td>
+                      <td> {{horario.periodo}}</td>
+                      <td> {{horario.disciplina}}</td>
+                      <!-- <td>{{horario.sala}}</td>
+                      <td>{{horario.dia}}</td>
+                      <td>{{horario.serie}}</td>
+                      <td>{{horario.professor}}</td> -->
                       <!-- <td><a style="text-decoration:none" href="#">+</a></i></td> -->
-                      <td><a href="#" data-toggle="modal" data-target="#exampleModal" data-whateverdetalhes="{{posts.curso}}" >+</a></td>
+                      <td><a href="#" data-toggle="modal" data-target="#exampleModal" 
+                        data-whatevercurso="{{horario.curso}} {{horario.periodo}}"
+                        data-whateverdetalhes="Disciplina: {{horario.disciplina}}&#013;Sala: {{horario.sala}}&#013;Dia: {{horario.dia}}&#013;Séries: {{horario.serie}}&#013;Professor: {{horario.professor}}
+                        "
+                        
+                        >+</a></td>
                       
                                       
                   </tr>
@@ -98,8 +125,8 @@
         #detalhes{
           border: 0px solid white;
           width:100%;
-          height:40px;
-          font-size: 16px;
+          height:300px;
+          font-size: 18px;
           }
       </style>
       <div class="container">
@@ -108,11 +135,12 @@
               <div class="modal-content">
                 <div class="modal-header">
                   <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title"><i class="glyphicon glyphicon-info-sign"></i> Informações do Candidato</h4>              
+                  <h4 class="modal-title"><i class="glyphicon glyphicon-info-sign"></i> Detalhes do Horário</h4>              
   
                 </div>
                 <div class="modal-body">
-                  <h2>Curso</h2>
+                  <h2 id="curso">Curso</h2>
+                  <style>textarea{height: 100px}</style>
                   <textarea name="detalhes" class="form-control" id="detalhes"></textarea>
                 </div>
   
@@ -132,6 +160,8 @@
           $('#exampleModal').on('show.bs.modal', function (event) {
             var button = $(event.relatedTarget) // Button that triggered the modal
             var recipientdetalhes = button.data('whateverdetalhes')
+            var recipientcurso = button.data('whatevercurso')
+            document.getElementById("curso").innerHTML = recipientcurso
             // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
             // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
             var modal = $(this)
@@ -184,11 +214,11 @@
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title"><i class="glyphicon glyphicon-info-sign"></i> Informações do VG</h4>              
+                <h4 class="modal-title"><i class="glyphicon glyphicon-info-sign"></i> Informações da Unidade</h4>              
 
               </div>
               <div class="modal-body">
-                <p><i id="i" class="glyphicon glyphicon-list-alt"></i> Candidatos 
+                <!-- <p><i id="i" class="glyphicon glyphicon-list-alt"></i> Candidatos 
                     <i id="i" class="glyphicon glyphicon-user"></i> {{total}}
                     <i id="i" class="glyphicon glyphicon-ok"></i> {{total_confirm}}
                 </p>
@@ -197,7 +227,8 @@
                     <i id="i" class="glyphicon glyphicon-user"></i> {{ salas.value_cpf }}       
                     <i id="i" class="glyphicon glyphicon-ok"></i> {{ salas.value_confirm|default:0 }}
                   </p>
-                {% endfor %}
+                {% endfor %} -->
+                <h1>Informações</h1>
 
               </div>
 
@@ -228,12 +259,12 @@
                         <img src="https://img.icons8.com/material-rounded/50/ffffff/about.png" width="26"></a></li>
                
                 <!--Laboratórios-->
-                <li><a href="/post_graphs" class="zoom-fab zoom-btn-sm zoom-btn-tangram scale-transition scale-out">
-                        <img src="https://img.icons8.com/metro/26/ffffff/positive-dynamic.png" width="26"></a></li>
+                <!-- <li><a href="/post_graphs" class="zoom-fab zoom-btn-sm zoom-btn-tangram scale-transition scale-out">
+                        <img src="https://img.icons8.com/metro/26/ffffff/positive-dynamic.png" width="26"></a></li> -->
 
                 <!--Agendar-->
-                <li><a href="#" data-toggle="modal" data-target="#modalCandidatos" class="zoom-fab zoom-btn-sm zoom-btn-person scale-transition scale-out">
-                        <img src="https://img.icons8.com/ios/50/ffffff/plus-math-filled.png" width="30"></a></li>
+                <!-- <li><a href="#" data-toggle="modal" data-target="#modalCandidatos" class="zoom-fab zoom-btn-sm zoom-btn-person scale-transition scale-out">
+                        <img src="https://img.icons8.com/ios/50/ffffff/plus-math-filled.png" width="30"></a></li> -->
             </ul>
       </div>
       <script>
@@ -413,17 +444,18 @@ $(document).ready(function(){
             <!-- MODAL SEARCH -->
 
             <div id="ModalSearch" class="modal fade" role="dialog">
-              <div class="modal-dialog">
+              <div class="modal-dialog modal-lg">
                 <!-- Modal content-->
                 <div class="modal-content">
                   <div class="modal-header">
 
                       <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      <h4 class="modal-title"><i class="glyphicon glyphicon-info-sign"></i> Informações do VG</h4>              
+                      <!-- <h4 class="modal-title"><i class="glyphicon glyphicon-info-sign"></i> Informações do VG</h4>               -->
+                      <h4 class="modal-title"><i class="glyphicon glyphicon-info-sign"></i> Consultar Horário</h4>              
       
                   </div>
                   <div class="modal-body">
-                      <form class="input-group" action="" method="GET">
+                      <!-- <form class="input-group" action="" method="GET">
                           <div class="input-group">
                                   <input name="search" type="text" class="form-control" placeholder="Search...CPF - Nome - Sala" autofocus>
                                   <span class="input-group-btn">
@@ -432,7 +464,18 @@ $(document).ready(function(){
                                       </button>
                                   </span>
                               </div>
-                        </form>
+                        </form> -->
+
+                        <form class="input-group" action="" method="GET">
+                            <div class="input-group">
+                                    <input name="search" type="text" class="form-control" placeholder="Search...Curso - Dia - Série - Sala" autofocus>
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="submit">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                        </button>
+                                    </span>
+                                </div>
+                          </form>
                   </div>
                   <br>
                   <br>

@@ -54,3 +54,15 @@ class Candidatos(models.Model):
 class Cursos(models.Model):
     cod_curso = models.CharField(max_length=10)
     nome_curso = models.CharField(max_length=150)
+
+class Horario(models.Model):
+    curso = models.CharField(max_length=150)
+    periodo = models.CharField(max_length=2)
+    disciplina = models.CharField(max_length=150)
+    sala = models.CharField(max_length=50)
+    dia = models.CharField(max_length=30)
+    serie = models.CharField(max_length=30)
+    professor = models.CharField(max_length=150)
+
+    def __str__(self):
+        return self.curso

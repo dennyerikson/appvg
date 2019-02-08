@@ -1,5 +1,5 @@
 import csv
-from blo.models import Post
+from blo.models import Post, Horario
 
 # vg_list = []
 
@@ -18,9 +18,11 @@ from blo.models import Post
 lista = []
 lista_stt = []
 
-dados_stt = csv.reader(open('VG24.csv'), delimiter=';')
-for [stt_cpf, stt_nome, stt_sala] in dados_stt:
-    lista.append('{};{};{}'.format(stt_cpf, stt_nome, stt_sala))
+dados_csv = csv.reader(open('BD_HORARIO.csv'), delimiter=';')
+for [curso, periodo, disciplina, sala, dia, serie, professor] in dados_csv:
+    lista.append('{};{};{};{};{};{};{}'.format(
+        curso, periodo, disciplina, sala, dia, serie, professor)
+    )
 i=0
 while i < len(lista):
     lista_stt.append(str(lista[i]).split(';'))
@@ -32,13 +34,18 @@ while i < len(lista_stt):
     index = lista_stt[i]
     index[0] = index[0]
     try:
-        query = Post.objects.create(
-        cpf=index[0],
-        nome=index[1],
-        sala=index[2]
+        query = Horario.objects.create(
+        curso=index[0],
+        periodo=index[1],
+        disciplina=index[2],
+        sala=index[3],
+        dia=index[4],
+        serie=index[5],
+        professor=index[6]
         )
         print('index: {} Sucess! - {} '.format(i, index[0]))
     except:
         print('index: {} Não cadastrado! - {} '.format(i, index[0]))
     i+=1
-#python manage.py shell < app_vg/blo/shell_vg.py
+# terminal$ python manage.py shell < app_vg/blo/shell_vg.py
+# no projeto no terminal$ python manage.py shell < blo/shell_vg.py

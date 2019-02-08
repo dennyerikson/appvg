@@ -4,6 +4,8 @@ from django.db.models import Q, Count, Sum
 from .json_print import Json_Get
 from .forms import CandidatosForm
 from django.db.models.sql import AggregateQuery
+from datetime import date
+from django.utils import timezone
 
 # Create your views here.
 
@@ -11,14 +13,25 @@ def home(request):
     horarios = ''
     search = request.GET.get('search')
 
+      
+  
+
+    dias = ('','Segunda-Feira','Terça-Feira','Quarta-Feira', 'Quinta-Feira','Sexta-Feira', 'Sábado')
+    dia = ('','Segunda','Terça','Quarta', 'Quinta','Sexta', 'Sábado')
+
+    # hoje = timezone.now().strftime(%A)
+    hoje = "{} {}".format(dia[int(timezone.now().strftime('%w'))], timezone.now().strftime('%d/%m/%Y'))
+    # print("Hoje é", timezone.now().strftime('%A'))
+    # print("Hoje é", timezone.now().strftime('%w'))
+
     """ 1º dia de Aula """
     if search:
         horarios = Horario.objects.filter(
+            Q(dia=dias[int(timezone.now().strftime('%w'))]),
             Q(curso=search) |
             Q(curso__contains=search)|
             Q(disciplina=search) |
             Q(disciplina__contains=search)|
-            Q(dia__contains=search)|
             Q(sala=search) |
             Q(sala__contains=search) 
         )
@@ -26,7 +39,7 @@ def home(request):
         # post = Post.objects.select_related().all()
         horarios = ''
 
-    context = {'horarios':horarios}
+    context = {'horarios':horarios,'hoje':hoje}
     return render(request, 'blo/home.html', context)
 
     # if request.POST:        

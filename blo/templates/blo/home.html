@@ -50,10 +50,11 @@
         <br>
                 <p> 
                   <!-- <i id="i" class="glyphicon glyphicon-list"></i>Lista Candidatos do vestibular      -->
-                  <i id="i" class="glyphicon glyphicon-list"></i>Lista Relação de sala    
+                  <i id="i" class="glyphicon glyphicon-list"></i>Relação de salas    
                   
 
                   <!-- <i id="i" class="glyphicon glyphicon-calendar"></i> 24/11 -->
+                  <i id="i" class="glyphicon glyphicon-calendar"></i> {{hoje}}
                 </p>
         <table class="table table-striped">
           <thead>
@@ -65,13 +66,16 @@
 
 
               <!-- <th><i class="glyphicon glyphicon-ok"></i></th> -->
-              <th id="cpf"><i class="glyphicon glyphicon-education"></i> Curso</th>
+              <!-- <th id="cpf"><i class="glyphicon glyphicon-education"></i> Curso</th>
               <th><i class="glyphicon glyphicon-time"></i> Periodo</th>
-              <th><i class="glyphicon glyphicon-pencil"></i> Disciplina</th>
+              <th><i class="glyphicon glyphicon-pencil"></i> Disciplina</th> -->
               <!-- <th><i class="glyphicon glyphicon-home"></i> Sala</th>
               <th><i class="glyphicon glyphicon-home"></i> Dia</th>
               <th><i class="glyphicon glyphicon-home"></i> Série</th>
               <th><i class="glyphicon glyphicon-education"></i> Professor</th> -->
+              <th><i class="glyphicon glyphicon-pencil"></i> Disciplina</th>
+              <th><i class="glyphicon glyphicon-home"></i> Sala</th>
+              <th><i class="glyphicon glyphicon-th-list"></i> Série</th>
               <th><i class="glyphicon glyphicon-plus"></i> Detalhes</th>
             </tr>
           </thead>
@@ -96,20 +100,21 @@
                       <td><a href="#" data-toggle="modal" data-target="#exampleModal" data-whateverdetalhes="{{posts.curso}}" >+</a></td> -->
                       
                       <!-- AULA -->
-                      <td>{{horario.curso}} </td>
-                      <td> {{horario.periodo}}</td>
-                      <td> {{horario.disciplina}}</td>
-                      <!-- <td>{{horario.sala}}</td>
-                      <td>{{horario.dia}}</td>
+                      <!-- <td>{{horario.curso}} </td>
+                      <td> {{horario.periodo}}</td> -->
+                      <style>#td{width: 50px}</style>
+                      <td id="td"> {{horario.disciplina}}</td>
+                      <td>{{horario.sala}}</td>
+                      <!-- <td>{{horario.dia}}</td> -->
                       <td>{{horario.serie}}</td>
-                      <td>{{horario.professor}}</td> -->
+                      <!-- <td>{{horario.professor}}</td> -->
                       <!-- <td><a style="text-decoration:none" href="#">+</a></i></td> -->
                       <td><a href="#" data-toggle="modal" data-target="#exampleModal" 
                         data-whatevercurso="{{horario.curso}} {{horario.periodo}}"
                         data-whateverdetalhes="Disciplina: {{horario.disciplina}}&#013;Sala: {{horario.sala}}&#013;Dia: {{horario.dia}}&#013;Séries: {{horario.serie}}&#013;Professor: {{horario.professor}}
                         "
                         
-                        >+</a></td>
+                        ><i class="glyphicon glyphicon-plus"></i></a></td>
                       
                                       
                   </tr>
@@ -468,7 +473,7 @@ $(document).ready(function(){
 
                         <form class="input-group" action="" method="GET">
                             <div class="input-group">
-                                    <input name="search" type="text" class="form-control" placeholder="Search...Curso - Dia - Série - Sala" autofocus>
+                                    <input name="search" type="text" class="form-control" placeholder="Search...Disciplina - Sala - Série - Curso" autofocus>
                                     <span class="input-group-btn">
                                         <button class="btn btn-default" type="submit">
                                         <span class="glyphicon glyphicon-search"></span>
@@ -485,6 +490,8 @@ $(document).ready(function(){
                 </div>
               </div>
           </div>
+
+          
 
 
             <!-- <div class="container">

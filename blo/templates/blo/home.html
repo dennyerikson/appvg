@@ -111,7 +111,7 @@
                       <!-- <td><a style="text-decoration:none" href="#">+</a></i></td> -->
                       <td><a href="#" data-toggle="modal" data-target="#exampleModal" 
                         data-whatevercurso="{{horario.curso}} {{horario.periodo}}"
-                        data-whateverdetalhes="Disciplina: {{horario.disciplina}}&#013;Sala: {{horario.sala}}&#013;Dia: {{horario.dia}}&#013;Séries: {{horario.serie}}&#013;Professor: {{horario.professor}}
+                        data-whateverdetalhes="Disciplina: {{horario.disciplina}}&#013;Sala: {{horario.sala}}&#013;Dia: {% display_dia_tag horario.dia as dias %}{% for dia in dias %}{{dia}}{% endfor %}&#013;Séries: {{horario.serie}}&#013;Professor: {{horario.professor}}
                         "
                         
                         ><i class="glyphicon glyphicon-plus"></i></a></td>

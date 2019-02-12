@@ -21,13 +21,15 @@ def home(request):
 
     # hoje = timezone.now().strftime(%A)
     hoje = "{} {}".format(dia[int(timezone.now().strftime('%w'))], timezone.now().strftime('%d/%m/%Y'))
+    # print("Hoje é", timezone.now())
+    # print("Dia {} nº{}".format(dias[int(timezone.now().strftime('%w'))],int(timezone.now().strftime('%w'))))
     # print("Hoje é", timezone.now().strftime('%A'))
     # print("Hoje é", timezone.now().strftime('%w'))
 
     """ 1º dia de Aula """
     if search:
         horarios = Horario.objects.filter(
-            Q(dia=dias[int(timezone.now().strftime('%w'))]),
+            Q(dia=(1+int(timezone.now().strftime('%w')))),
             Q(curso=search) |
             Q(curso__contains=search)|
             Q(disciplina=search) |
@@ -38,6 +40,8 @@ def home(request):
     else:
         # post = Post.objects.select_related().all()
         horarios = ''
+    
+    # horarios = Horario.objects.filter(Q(dia__contains=(1+int(timezone.now().strftime('%w')))))
 
     context = {'horarios':horarios,'hoje':hoje}
     return render(request, 'blo/home.html', context)
@@ -117,3 +121,19 @@ def confirm_graphs(request):
 
 def print_graphs(request):
     return render(request, 'blo/print_graphs.html')
+
+
+
+
+# listaCurso = []
+# lista_Curso = []
+
+# Curso_csv = csv.reader(open('BD_HORARIO.csv'), delimiter=';')
+# for [curso, periodo, disciplina, sala, dia, serie, professor] in Curso_csv:
+#     listaCurso.append('{};{};{};{};{};{};{}'.format(
+#         curso, periodo, disciplina, sala, dia, serie, professor)
+#     )
+# i=0
+# while i < len(listaCurso):
+#     lista_Curso.append(str(listaCurso[i]).split(';'))
+#     i+=1

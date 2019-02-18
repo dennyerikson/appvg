@@ -1,44 +1,45 @@
 ﻿2;M;Gestão da Qualidade;A12;3;7;José Quinquiolo
-2;M;Processos Logísticos;A18;5;4, 5, 6;Alison Lucas
+2;M;Processos Logísticos;B27;5;4, 5, 6;Alison Lucas
 2;N;Legislação Tributária;A16;4;4;sem
-2;M;Gestão da Produção;A17;2;6, 8;José Quinquiolo
+2;M;Gestão da Produção;A17;2;1, 6, 8;José Quinquiolo
 2;M;Gestão de Projetos;A17;4;6, 7;Gustavo Bohler
-2;M;Desenvolvimento de Pessoas;A17;3;5, 8;Filipe Santos
-2;M;Macroeconomia;A18;5;4, 5;Alison Lucas
+2;M;Desenvolvimento de Pessoas;A17;3;1, 5, 8;Filipe Santos
+2;M;Macroeconomia;B27;5;4, 5;Alison Lucas
 2;N;Análise de Custos;A18;3;4;Alison Lucas
 2;N;Metodologia Científica;B27;6;4, 5;Flávio Faciolla
-2;M;Simulação Empresarial;B29;6;4, 5, 6, 7;Alison Lucas
-2;N;Matemática Financeira;B30;4;2, 3;Antonio Junior
-2;N;Sistemas de Informação Gerencial;B30;4;6;sem
+2;M;Simulação Empresarial;B29;6;1, 4, 5, 6, 7;Alison Lucas
+2;N;Matemática Financeira;C38;4;2, 3;Antonio Junior
+2;N;Sistemas de Informação Gerencial;D59;4;6;Alison Lucas
 2;N;Gestão da Qualidade;B31;2;7;José Quinquiolo
-2;N;Comportamento Organizacional;B31;5;4;Rejane
-2;M;Comportamento Organizacional;B34;4;4;Rejane
-2;N;Responsabilidade Social e Ambiental;B34;5;6;sem
-2;M;Raciocínio Lógico Matemático;B35;4;8;sem
-2;N;Sistemas de Informação Gerencial;C39;2;1;sem
-2;N;Gestão de Pessoas;C39;3;3;sem
-2;N;Desenvolvimento de Pessoas;C41;2;2, 5, 8;Filipe Santos
+2;N;Sistemas de Informação Gerencial;C38;5;1;Mauricio Guerreiro
+2;M;Comportamento Organizacional;B34;4;1, 4;Rejane
+2;N;Responsabilidade Social e Ambiental;B34;5;6;Alison Lucas
+2;M;Raciocínio Lógico Matemático;B35;4;8;Malheiros
+2;N;Gestão de Pessoas;C39;3;3;André Aquino
+2;N;Desenvolvimento de Pessoas;C42;2;2, 5, 8;Filipe Santos
 2;N;Processos Logísticos;C41;4;5, 7;Ana Leite
-2;N;Gestão de Projetos;C43;6;6;sem
+2;N;Gestão de Projetos;C43;6;6;Alison Lucas
 2;N;Microeconomia;C43;5;3;Ana Leite
-2;N;Gestão de Projetos;C44;5;2, 4, 5, 7;Antonio Junior
+2;N;Gestão de Projetos;C44;5;2, 5, 7;Antonio Junior
 2;N;Gestão da Produção;C45;3;5;José Quinquiolo
 2;N;Simulação Empresarial;D47;3;6, 7, 8;Antonio Junior
-2;N;Legislação Social e Trabalhista;D49;2;6;Robernei Lima
-2;N;Raciocínio Lógico Matemático;D51;5;8;Flávio Faciolla
-2;N;Modelos de Gestão;D59;6;2, 3, 8;sem
-2;M;Sistemas de Informação Gerencial;C39;2;1;sem
+2;N;Legislação Social e Trabalhista;C38;2;1, 6;Robernei Lima
+2;N;Raciocínio Lógico Matemático;B33;5;8;Flávio Faciolla
+2;N;Modelos de Gestão;D59;6;2, 3, 8;André Aquino
+2;N;Legislação Tributária;C38;3;1;Malheiros
+2;N;Comportamento Organizacional;B35;4;1, 4;Rejane
+2;N;Legislação Tributária;B31;5;4;Malheiros
 3;M;Metodologia Científica;A01;3;6, 7;Rosenea Menezes
 3;M;Atelier de Projeto de Arquitetura V;A01;4;6, 7;Gustavo Massimino
 3;M;Ecologia Urbana;A01;2;6, 7;Fábio Pinheiro
 3;M;Segurança e Organização do Trabalho;A02;3;10;Rosenea Menezes
 3;M;Legislação e Normas Profissionais;A02;2;10;Ana Priscila
 3;M;Trabalho Final de Graduação II;A02;2;10;Ana Flávia
-3;N;Metodologia Científica;;2;5;Ana Helena
-3;N;Informática Aplicada à Arquitetura e Urbanismo I;;3;2, 3;Fábio Pinheiro
+3;N;Metodologia Científica;B13;2;5;Ana Helena
+3;N;Informática Aplicada à Arquitetura e Urbanismo I;Informatica;3;1, 2, 3;Fábio Pinheiro
 3;N;Técnicas Retrospectivas, Restauração e Patrimônio Histórico;E35;5;7, 8;Ana Flávia
 3;N;Urbanismo I;E35;6;5, 6, 7;Daniel Bischof
-3;N;Estudos Sociais e Econômicos;E35;2;2, 9;Rosenea Menezes
+3;N;Estudos Sociais e Econômicos;E35;2;1, 2, 9;Rosenea Menezes
 3;N;Urbanismo III;E35;5;8;Felipe Rezende
 3;N;Sistemas Estruturais II;E36;3;8;Sidney Alberto
 3;N;História e Teoria da Arquitetura, Urbanismo e Paisagismo II;E36;5;5;Felipe Rezende
@@ -58,153 +59,158 @@
 3;M;Sistemas Estruturais I;A01;3;6, 7;Sidney Alberto
 3;M;Urbanismo II;A01;2;6, 7;Ana Priscila
 3;N;Introdução ao Projeto de Arquitetura e Urbanismo;E49;6;2;Fábio Pinheiro
-3;N;Atelier de Projeto de Arquitetura II;;4;2, 3;Gustavo Massimino
-3;N;Geometria Descritiva Aplicada à Arquitetura II;;4;4, 5;Ana Flávia
+3;N;Atelier de Projeto de Arquitetura II;Desenho1;4;2, 3;Gustavo Massimino
+3;N;Geometria Descritiva Aplicada à Arquitetura II;Desenho2;4;4, 5;Ana Flávia
+3;N;Oficinas de Expressão;E41;4;1;Felipe Rezende
 4;M;Formação Integral em Saúde;A10;4;3;Karina Lopes
-4;M;Ciên. Morfofuncionais dos Sistemas Imune e Hematológico;A12;6;2;Ricardo Belo
+4;M;Ciên. Morfofuncionais dos Sistemas Imune e Hematológico;B31;6;2;Ricardo Belo
 4;M;Micologia e Virologia;A14;3;2, 3, 4;Ricardo Belo
-4;M;Ciên. Morfofuncionais dos Sistemas Digestório, Endócrino e Renal;A14;5;2, 3;Josely Camara
+4;M;Ciên. Morfofuncionais dos Sistemas Digestório, Endócrino e Renal;A14;5;1, 2, 3;Josely Camara
 4;M;Patologia Geral;A15;4;2, 4;Guilherme Patto
 4;N;Tópicos Especiais em Biomedicina I;A17;4;4;Ricardo Belo
 4;M;Metodologia Científica;A19;2;3, 4;Daniel Ramos
 4;N;Micologia e Virologia;A19;5;2, 3, 4;Ricardo Belo
-4;N;Ciên. Morfofuncionais dos Sistemas Imune e Hematológico;B25;2;3;Ivanete Sbruzzi
-4;N;Ciên. Morfofuncionais dos Sistemas Digestório, Endócrino e Renal;B25;4;3;Josely Camara
-4;M;Biologia Molecular e Biotecnologia;;6;3, 4;Ivanete Sbruzzi
+4;N;Ciên. Morfofuncionais dos Sistemas Imune e Hematológico;B26;2;3;Ivanete Sbruzzi
+4;N;Ciên. Morfofuncionais dos Sistemas Digestório, Endócrino e Renal;D47;4;3;Josely Camara
+4;M;Biologia Molecular e Biotecnologia;A12;6;3, 4;Ivanete Sbruzzi
 4;M;Bacteriologia Clínica;B27;6;4;Guilherme Patto
 4;N;Relações Parasitas e Hospedeiros;B27;4;2;Mary Angela
 4;N;Biologia Molecular e Biotecnologia;B28;3;3, 4;Ivanete Sbruzzi
-4;N;Microbiologia;B28;3;2;sem
 4;N;Bacteriologia Clínica;B28;3;4;Ivanete Sbruzzi
 4;N;Patologia Geral;D50;6;2, 3, 4;Guilherme Patto
 4;N;Formação Integral em Saúde;D59;2;3;Fátima Pinto
 4;M;Ciên. Morfofuncionais dos Sistemas Imune e Hematológico;A12;6;3;Ivanete Sbruzzi
+4;N;Saúde Coletiva;C37;2;1;Luís Vieira
+4;N;Microbiologia;A10;2;2;Mary Saldanha
+4;N;Formação Integral em Saúde;C42;3;1;Luís Vieira
+4;N;Ciências Moleculares e Celulares;A13;4;1;Ivanete
+4;N;Química Geral;B29;6;1;Alfredo Vespa
+4;M;Saúde Coletiva;C37;2;1;Luíz Vieira
+4;M;Ciéncia Moleculares e Celulares;C42;3;1;Josely Camara
+4;M;Formação Integral em Saúde;A13;4;1;Ivanete
 5;N;Metodologia Científica;B13;2;3, 4;Ana Helena
-5;N;Ciência da Computação e Profissão;D30;5;2, 6, 8;Diego Silva
-5;N;Física Geral;D30;6;2, 6;Maurício Ruv
+5;N;Ciência da Computação e Profissão;D30;5;1, 2, 6, 8;Diego Silva
+5;N;Física Geral;D30;6;1, 2, 6;Maurício Ruv
 5;N;Computação Gráfica e Processamento de Imagens;D30;3;2, 4, 7;Rogério Andrade
 5;N;Robótica;D30;4;2, 3;Eduardo Garcia
 5;N;Métodos Numéricos Aplicados;D31;6;3, 4, 8;Kristian Vieira
 5;N;Algoritmos e Estrutura de Dados;D31;3;3;Diego Silva
 5;N;Compiladores;D31;4;7;Diego Silva
-5;N;Homem, Cultura e Sociedade;D13;2;3, 6;José Candelaria
+5;N;Homem, Cultura e Sociedade;B13;2;3, 6;José Candelaria
 5;N;Modelagem de Dados;D31;5;3, 4;Rogério Andrade
 5;N;Princípios de Telecomunicações;D32;4;5;Flávio Silva
 5;N;Probabilidade e Estatística;D32;3;5, 6;Débora Santanna
 5;N;Redes de Computadores;D32;4;5;Flávio Silva
 5;N;Linguagens Formais e Autômatos;D32;5;4, 5;Rogério Andrade
-5;N;Gestão de Projetos;D33;4;6, 7;Diego Silva
+5;N;Gestão de Projetos;B15;4;6, 7;Diego Silva
 5;N;Sistemas de Informação Gerencial;D33;2;5, 7, 8;Flávio Silva
-5;N;Princípios de Telecomunicações;D33;4;8;Flávio Silva
-5;N;Trabalho de Conclusão de Curso II;D33;4;8;sem
-5;N;Trabalho de Conclusão de Curso I;;5;7;sem
+5;N;Princípios de Telecomunicações;D32;4;8;Flávio Silva
+5;N;Sistemas Operacionais;;3;1;Flávio Silva
+5;N;Matemática Discreta;;4;1;Kristian Vieira
 6;N;Perícia, Mediação e Arbitragem;A15;4;2, 7, 8;Robernei Lima
 6;N;Legislação Tributária;A16;4;4;Malheiros
-6;N;Direito Empresarial;A18;5;3, 5;sem
+6;N;Direito Empresarial;A18;5;3, 5;Luciana Melo
 6;N;Metodologia Científica;B27;6;8;Flávio Faciolla
 6;N;Metodologia Científica;B27;5;5;Gislaine
-6;N;Homem, Cultura e Sociedade;B28;6;4;Daniel Ramos
-6;N;Matemática Financeira;B30;4;3;Antonio Junior
-6;N;Sistemas de Informação Gerencial;B30;4;6;sem
+6;N;Homem, Cultura e Sociedade;B26;6;4;Daniel Ramos
+6;N;Matemática Financeira;C38;4;3;Antonio Junior
+6;N;Sistemas de Informação Gerencial;D59;4;6;Alison Lucas
 6;N;Ética, Política e Cidadania;B31;3;3, 8;Daniel Ramos
 6;N;Gestão da Inovação;B35;5;8;Alison Lucas
 6;N;Práticas Contábeis I;C39;4;5;Clodoaldo
 6;N;Microeconomia;C43;5;4;Ana Leite
-6;N;Gestão de Projetos;C43;6;5;sem
+6;N;Gestão de Projetos;C43;6;5;Alison Lucas
 6;N;Gestão de Projetos;C44;5;2, 6;Antonio Junior
-6;N;Capital de Giro e Análise Financeira;C45;6;6, 7;Malheiros
+6;N;Capital de Giro e Análise Financeira;C38;6;6, 7;Malheiros
 6;N;Contabilidade Intermediária;D46;2;2, 3;Clodoaldo
 6;N;Contabilidade Social e Ambiental;D49;3;2, 4, 5, 6, 7;Clodoaldo
-6;N;Legislação Social e Trabalhista;D49;2;4, 6;Robernei Lima
-6;N;Modelos de Gestão;D59;6;3;sem
+6;N;Legislação Social e Trabalhista;C38;2;1, 4, 6;Robernei Lima
+6;N;Modelos de Gestão;D59;6;3;Alison Lucas
+6;N;Legislação Tributária;C38;3;1;Malheiros
+6;N;Comportamento Organizacional;B35;4;1;Rejane
+6;N;Sistemas de Informação Gerencial;C38;5;1;Mauricio Guerreiro
 8;N;Treinamento Resistido;A10;6;2, 4, 5, 6;Luiz Fernando
-8;N;Metodologia do Ensino do Atletismo;A10;5;4, 5, 6;sem
-8;N;Atividade Física na Empresa;A10;5;4, 5, 6;sem
-8;N;Jogos, Brinquedos e Brincadeiras;A10;4;1;sem
-8;N;Saúde Coletiva;A10;2;1;Karina Lância
+8;N;Metodologia do Ensino do Atletismo;A10;5;4, 5, 6;Teófilo
+8;N;Atividade Física na Empresa;A10;5;4, 5, 6;Teófilo
+8;N;Saúde Coletiva;C37;2;1;Luís Vieira
 8;N;Metodologia do Ensino da Ginástica;A10;3;5;Lerrine
-8;N;Aprendizagem Motora e Psicomotricidade;A10;6;1;Lerrine
+8;N;Aprendizagem Motora e Psicomotricidade;;6;1;Lerrine
 8;N;Metodologia do Ensino de Esportes Aquáticos;A12;4;4, 5;Luiz Fernando
 8;N;Primeiros Socorros;A12;3;2;Jorge
 8;N;Fundamentos do Movimento Humano;A13;5;2, 3;Lerrine
-8;N;Medidas e Avaliação em Educação Física;A14;2;2,3,4;Luiz Fernando
-8;N;Ciên. Morfofuncionais dos Sistemas Nervoso e Cardiorrespiratório;B25;4;3;Gislaine
-8;N;Fundamentos da Iniciação Esportiva;B30;6;3;sem
+8;N;Medidas e Avaliação em Educação Física;A14;2;2, 3, 4;Luiz Fernando
+8;N;Ciên. Morfofuncionais dos Sistemas Nervoso e Cardiorrespiratório;B26;4;3;Gislaine
+8;N;Fundamentos da Iniciação Esportiva;B30;6;3;Teófilo
 8;N;Ética, Política e Cidadania;B31;3;4;Daniel Ramos
-8;N;Nutrição Aplicada à Saúde e ao Esporte;B33;3;6;sem
-8;N;Jogos, Brinquedos e Brincadeiras;B33;4;2;Lerrine
+8;N;Nutrição Aplicada à Saúde e ao Esporte;C41;3;6;Ana Valéria
+8;N;Jogos, Brinquedos e Brincadeiras;B33;4;1, 2;Lerrine
 8;N;Metodologia do Ensino da Ginástica;B34;3;3;Lerrine
-8;N;Nutrição Aplicada à Saúde e ao Esporte;B34;3;3;sem
-8;N;Crescimento e Desenvolvimento Humano;B36;3;5;Jorge
-9;M;Fundamentos Semiológicos de Enfermagem;A10;3;3;Sandro Gama
+8;N;Nutrição Aplicada à Saúde e ao Esporte;B34;3;3;Lerrine
+8;N;Crescimento e Desenvolvimento Humano;C36;3;5;Jorge
+8;N;Ciências Moleculares e Celulares;D57;3;1;Luiz Fernando
+9;M;Fundamentos Semiológicos de Enfermagem;B30;3;3;Sandro Gama
 9;M;Enfermagem na Saúde da Mulher;A10;5;5;Leandra Ruzene
-9;M;Ciências Moleculares e Celulares;A10;3;2;Ivanete
-9;M;Formação Integral em Saúde;A10;4;3;Karina Lancia
-9;N;Estágio Supervisionado I - Hospitalar;;2;9;sem
-9;N;Estágio Supervisionado I - Hospitalar;;4;9;sem
-9;N;Estágio Supervisionado I - Hospitalar;;6;9;sem
-9;N;Estágio Supervisionado I - Hospitalar;;5;9;sem
+9;M;Ciências Moleculares e Celulares;A10;3;1, 2;Ivanete
+9;M;Formação Integral em Saúde;A10;4;1, 3;Karina Lancia
 9;N;Psicologia Aplicada à Saúde;A10;4;10;Ricardo Mattos
-9;M;Didática Aplicada à Enfermagem;A13;6;2, 3, 4, 8;Francine Costa
+9;M;Didática Aplicada à Enfermagem;A13;6;1, 2, 3, 4, 8;Francine Costa
 9;M;Humanização na Assistência;A13;5;10;Marilda Arantes
 9;M;Enfermagem, Ciência e Trabalho;A13;4;2, 4, 8;Francine Costa
-9;N;Microbiologia;A13;4;2;sem
+9;N;Microbiologia;A13;4;2;Guilherme Patto
 9;M;Ética, Política e Cidadania;A14;6;4, 8;Marcela Dupont
 9;M;Ciên. Morfofuncionais dos Sistemas Digestório, Endócrino e Renal;A14;5;2, 3;Josely Camara
 9;M;Saúde Coletiva;A14;4;4, 5;Bruno Priant
-9;M;Metodologia Científica;;3;4;Marilda Arantes
+9;M;Metodologia Científica;B31;3;4;Marilda Arantes
 9;N;Bioética e Legislação em Enfermagem;A11;3;4, 7, 10;Sivaldo Almeida
 9;M;Enfermagem em Centro Cirúrgico;A15;6;5, 6, 7;Sandro Gama
 9;M;Seminário Integrador na Saúde da Criança;A15;5;6, 7;Francine Costa
 9;N;Didática Aplicada à Enfermagem;A15;2;6;Sandro Gama
 9;M;Gestão em Saúde;A16;2;4, 5;Sandro Gama
-9;N;Competências Profissionais - Temas Atuais na Saúde;A16;3;10; Luiz Vieira
+9;N;Competências Profissionais - Temas Atuais na Saúde;C37;3;10; Luiz Vieira
 9;N;Enfermagem na Saúde do Idoso;A16;5;5;Francine Costa
-9;N;Humanização na Assistência;A16;6;10;Sivaldo Almeida
+9;N;Humanização na Assistência;A15;6;10;Sivaldo Almeida
 9;M;Bioética e Legislação em Enfermagem;D33;4;6, 7, 10;Marilda Arantes
-9;M;Bioética e Legislação em Enfermagem;A17;6;10;Marilda Arantes
-9;M;Competências Profissionais - Temas Atuais na Saúde;A17;4;10;Francine Costa
+9;M;Bioética e Legislação em Enfermagem;A10;6;10;Marilda Arantes
+9;M;Competências Profissionais - Temas Atuais na Saúde;A16;4;10;Francine Costa
 9;M;Metodologia Científica;A19;2;2;Daniel Ramos
 9;N;Sistematização da Assistência de Enfermagem;A19;6;2, 3;Fátima Pinto
-9;M;Ciência, Tecnologia e Saúde;B25;2;10;Luciana Melo
-9;N;Seminário Integrador na Saúde da Criança;B25;6;5, 6, 7;Luiz Vieira
-9;N;Ciên. Morfofuncionais dos Sistemas Digestório, Endócrino e Renal;B25;4;3;Josely Camara
-9;N;Ciên. Morfofuncionais dos Sistemas Nervoso e Cardiorrespiratório;B25;4;3;Gislaine Silva
+9;M;Ciência, Tecnologia e Saúde;A14;2;10;Luciana Melo
+9;N;Seminário Integrador na Saúde da Criança;B32;6;5, 6, 7;Luiz Vieira
+9;N;Ciên. Morfofuncionais dos Sistemas Digestório, Endócrino e Renal;D47;4;3;Josely Camara
+9;N;Ciên. Morfofuncionais dos Sistemas Nervoso e Cardiorrespiratório;D47;4;3;Gislaine Silva
 9;M;Tópicos Especiais em Enfermagem II;B27;2;7, 8;Marilda Arantes
 9;M;Homem, Cultura e Sociedade;B28;6;3;Amália Costa
 9;N;Enfermagem em Centro Cirúrgico;B28;4;6, 7;Francine Costa
 9;N;Enfermagem na Saúde do Adulto;B28;2;4, 7;Sivaldo Almeida
-9;N;Enfermagem, Ciência e Trabalho;B28;5;2, 4, 6;Fátima Pinto
-9;N;Ciências Moleculares e Celulares;B29;3;2;Ivanete
-9;N;Ética e Relações Humanas no Trabalho;B30;5;10;Sivaldo Almeida
+9;N;Enfermagem, Ciência e Trabalho;B28;5;1, 2, 4, 6;Fátima Pinto
+9;N;Ciências Moleculares e Celulares;B29;3;2;Luiz Tross
+9;N;Ética e Relações Humanas no Trabalho;B26;5;10;Sivaldo Almeida
 9;N;Gestão em Saúde;C36;4;4, 5;Luciana Melo
 9;N;Saúde Coletiva;C44;4;5;Karina Lancia
-9;M;Estágio Supervisionado I - Hospitalar;;2;9;sem
-9;M;Estágio Supervisionado I - Hospitalar;;4;9;sem
-9;M;Estágio Supervisionado I - Hospitalar;;6;9;sem
-9;M;Estágio Supervisionado I - Hospitalar;;3;9;sem
-9;M;Estágio Supervisionado I - Hospitalar;;5;9;sem
 9;N;Formação Integral em Saúde;D50;2;2, 10;Luciana Melo
 9;N;Formação Integral em Saúde;D59;2;3;Fátima Pinto
-9;M;Trabalho de Conclusão de Curso II;;3;8;sem
-9;N;Estágio Supervisionado I - Hospitalar;;3;9;sem
+9;M;Saúde Coletiva;A15;2;1;Karina Lancia
+9;N;Saúde Coletiva;C37;2;1;Luís Vieira
+9;N;Formação Integral em Saúde;C42;3;1;Josely Camara
+9;N;Enfermagem na Saúde do Adulto;A14;3;4;Sivaldo Almeida
+9;N;Ciências Moleculares e Celulares;A13;4;1;Fatima Arthuzo
 10;N;Desenho Auxiliado por Computador;A12;4;2, 3;Fábio Pinheiro
 10;M;Cálculo Diferencial e Integral;B13;6;3;Débora Santanna
-10;M;Estruturas Isostáticas;B13;3;5, 6, 7;José Orrios
-10;M;Física Geral e Experimental - Mecânica;B13;4;3;Maurício Ruv
-10;M;Gestão de Projetos;B13;3;4, 5;Douglas Andrini
-10;N;Hidráulica e Hidrometria;B13;6;9;Lucas Sato
+10;M;Estruturas Isostáticas;B16;3;5, 6, 7;José Orrios
+10;M;Física Geral e Experimental - Mecânica;B13;4;1, 3;Maurício Ruv
+10;M;Gestão de Projetos;B13;3;1, 4, 5;Douglas Andrini
+10;N;Hidráulica e Hidrometria;B13;6;9A;Lucas Sato
 10;N;Materiais de Construção Civil II;B13;5;9;Lucas Sato
 10;N;Física Geral e Experimental - Mecânica;B14;2;2, 3;Luciana Lobato
-10;N;Cálculo Diferencial e Integral;B19;6;2, 3;Débora Santanna
+10;N;Cálculo Diferencial e Integral;B19;6;2, 3;Debora Cervelline
 10;N;Princípios de Eletricidade e Magnetismo;B14;6;5;Luiz Sbruzzi
 10;M;Fenômenos de Transporte;B15;2;4;Fernando Sá
 10;M;Legislação, Segurança do Trabalho e Meio Ambiente;B15;4;4;Jorge Morgado
 10;M;Logística Empresarial e Engenharia de Tráfego;B15;6;4, 5;Edner Roberto
 10;M;Cálculo Diferencial e Integral II;B15;5;4;Kristian Vieira
-10;N;Pontes e Grandes Estruturas;B15;6;9;Douglas Andrini
-10;N;Legislação e Segurança do Trabalho;B15;3;3, 6, 7;Edner Roberto
-10;N;Administração e Economia para Engenheiros;B15;2;6;Débora Santanna
+10;N;Pontes e Grandes Estruturas;B15;6;9B;Douglas Andrini
+10;N;Legislação e Segurança do Trabalho;B13;3;3, 6, 7;Edner Roberto
+10;N;Administração e Economia para Engenheiros;B15;2;1, 6;Debora Cervelline
 10;N;Cálculo Diferencial e Integral III;B15;3;4, 5;Kristian Vieira
 10;M;Engenharia e Profissão;B16;2;6;José Orrios
 10;M;Administração e Economia para Engenheiros;B16;5;5, 6;Edner Roberto
@@ -212,7 +218,6 @@
 10;N;Fenômenos de Transporte;B16;6;4;José Orrios
 10;N;Materiais de Construção Civil I;B16;4;5;Sidney Alberto
 10;N;Gestão de Projetos;B16;4;4, 7, 8;Sérgio Antonio
-10;N;Projetos e Detalhes Construtivos de Alvenaria Estrutural;B16;2;9;Nilton Santos
 10;M;Estradas;B17;4;6, 7;Fernando Sá
 10;M;Materiais de Construção Civil I;B17;2;5, 7;Lucas Sato
 10;M;Hidráulica e Hidrometria;B17;6;6, 7;Lucas Sato
@@ -226,7 +231,9 @@
 10;N;Instalações Elétricas;B27;4;5, 6;Ricardo Olivato
 10;N;Homem, Cultura e Sociedade;D31;2;4;José Candelaria
 10;N;Estruturas Hiperestáticas;D33;3;8, 9;Nilton Santos
-10;N;Química e Ciencia dos Materiais;B13;5;3;Hellen Cunha
+10;M;Química e Ciencia dos Materiais;B13;5;3;Hellen Cunha
+10;N;Engenharia e Profissão;B19;3;1;José Luiz
+10;N;Geometria Analítica e Álgebra Vetorial;B22;4;1;Lucas Sato
 11;N;Metodologia Científica;B13;2;8;Ana Helena
 11;N;Cálculo Diferencial e Integral;B19;6;2, 3;Débora Santanna
 11;N;Física Geral e Experimental - Mecânica;B14;2;2, 3;Luciana Lobato
@@ -244,24 +251,26 @@
 11;N;Informática Industrial II;B27;5;9;Eduardo Garcia
 11;N;Conversão Eletromecânica de Energia;D29;2;6;Jorge Morgado
 11;N;Análise e Processamento de Sinais;D30;2;9;Eduardo Garcia
-11;N;Robótica;D30;4;3;Eduardo Garcia
+11;N;Robótica;D30;4;3, 6;Eduardo Garcia
 11;N;Probabilidade e Estatística;D32;3;3;Débora Santanna
 11;N;Fenômenos de Transporte;D33;5;3;Luciana Lobato
-11;N;Est. Cur. Engenharia;;2;8;sem
-11;N;Trabalho de conclusão de curso I;;4;9;sem
+11;N;Geometria Analítica e Álgebra Vetorial;B22;4;1;Lucas Sato
+11;N;Administração e Economia para Engenheiros;B15;2;1;Debora Cervelline
+11;N;Engenharia e Profissão;B19;3;1;José Luiz
+11;N;Legislação, Segurança do Trabalho e Meio Ambiente;B20;6;1;José Luiz
 12;N;Elementos de Máquinas;A12;3;6, 7, 8;Gerson Ismael
 12;N;Mecânica Geral;B13;4;5, 6;Luciana Lobato
 12;N;Princípios de Eletricidade e Magnetismo;B14;6;5;Luiz Sbruzzi
 12;N;Pesquisa Operacional - Programação Matemática;B14;3;7, 8;Emmanuel Machado
 12;N;Cálculo Diferencial e Integral;B19;6;2, 3;Débora Santanna
 12;N;Desenho Auxiliado por Computador;B14;4;2, 3;Fernando Sá
-12;N;Física Geral e Experimental - Mecânica;B14;2;2, 3, 4;Luciana Lobato
+12;N;Física Geral e Experimental - Mecânica;B14;2;2, 3;Luciana Lobato
 12;M;Gestão da Manutenção;B15;3;10;Fernando Sá
-12;N;Desenho Técnico Mecânico;B15;5;6, 7;Fernando Sá
+12;N;Desenho Técnico Mecânico;B14;5;6, 7;Fernando Sá
 12;M;Administração e Economia para Engenheiros;B16;5;10;Edner Roberto
 12;N;Planejamento, Programação e Controle de Produção;B19;4;7, 8, 9;Edner Roberto
 12;N;Máquinas de Fluxo;B20;4;7, 8, 9;Gerson Ismael
-12;N;Manufatura Mecânica - Soldagem;B20;4;9;José Assis
+12;N;Manufatura Mecânica - Soldagem;B20;4;5, 9;José Assis
 12;N;Logística Empresarial e Engenharia de Tráfego;B21;5;6, 7, 8;Edner Roberto
 12;N;Engenharia de Métodos;B21;2;5, 6;Edner Roberto
 12;N;Gestão de Operações e Serviços;B21;2;5, 6;Edner Roberto
@@ -271,45 +280,50 @@
 12;N;Gestão da Manutenção;B25;3;4, 9;José Samia
 12;N;Refrigeração, Ar Condicionado e Ventilação;B25;2;9, 10;Hellen Cunha
 12;N;Projeto de Máquinas;B25;5;8, 9;Gerson Ismael
-12;N;Manufatura Mecânica - Soldagem;B25;4;5;José Assis
 12;N;Manufatura Mecânica - Conformação dos Metais;B25;4;4, 8;Gerson Ismael
 12;N;Metrologia e Controle Geométrico;B26;2;5, 6, 7;Everaldo Barros
 12;N;Gestão do Conhecimento e da Tecnologia da Informação;B27;6;6, 7, 8, 9;Adriano Barreto
 12;N;Controle e Automação de Processos Industriais;D29;2;7;Everaldo Barros
 12;N;Transferência de Calor e Massa;D32;6;6, 7;Gerson Ismael
 12;N;Projeto de Operações Produtivas;D32;2;10;José Samia
-12;N;Probabilidade e Estatística;D32;3;3;Débora Santanna
+12;N;Probabilidade e Estatística;D32;3;3;Debora Cervelline
 12;N;Fenômenos de Transporte;D33;5;3, 5;Luciana Lobato
-12;N;Gestão de Projetos;D33;4;5, 6, 9;Diego Silva
+12;N;Gestão de Projetos;D15;4;5, 6, 9;Diego Silva
+12;N;Administração e Economia para Engenheiros;B15;2;1;Debora Cervelline
+12;N;Física Geral e Experimental - Mecânica;B23;2;4;Luciana Lobato
+12;N;Engenharia e Profissão;B19;3;1;José Luiz
+12;N;Geometria Analítica e Álgebra Vetorial;B22;4;1;Lucas Sato
 13;N;Desenho Auxiliado por Computador;B14;4;2, 3;Fernando Sá
-13;N;Cálculo Diferencial e Integral;B14;6;2, 3;Débora Santanna
+13;N;Cálculo Diferencial e Integral;B19;6;2, 3;Debora Cervelline
 13;N;Princípios de Eletricidade e Magnetismo;B14;6;4, 5;Luiz Sbruzzi
 13;N;Física Geral e Experimental - Mecânica;B14;2;2, 3;Luciana Lobato
-13;N;Administração e Economia para Engenheiros;B15;2;9;Débora Santanna
+13;N;Administração e Economia para Engenheiros;B15;2;1, 9;Debora Cervelline
 13;N;Cálculo Diferencial e Integral III;B15;3;4, 5;Kristian Vieira
 13;N;Eficiência Energética e Qualidade de Energia;B17;5;7;Jorge Morgado
-13;N;Cálculo Diferencial e Integral IV;B19;4;6, 7;Débora Santanna
+13;N;Cálculo Diferencial e Integral IV;B21;4;6, 7;Debora Cervelline
 13;N;Sistemas Elétricos de Potência I;B21;3;8, 9;Ricardo Silva
-13;N;Microcontroladores e Microprocessadores;B22;6;8, 9;Fernando Sá
+13;N;Microcontroladores e Microprocessadores;B21;6;8, 9;Fernando Sá
 13;N;Medidas e Materiais Elétricos;B22;6;6, 8;Jorge Morgado
 13;N;Cálculo Numérico;B22;5;4, 6;Kristian Vieira
-13;N;Geometria Analítica e Álgebra Vetorial;B22;4;4;Lucas Sato
+13;N;Geometria Analítica e Álgebra Vetorial;B22;4;1, 4;Lucas Sato
 13;N;Geração, Transmissão e Distribuição de Energia Elétrica;B22;3;6;Everaldo Barros
 13;N;Circuitos Elétricos II;B22;3;6;Everaldo Barros
 13;N;Engenharia e Profissão;B23;5;2;José Lama
-13;N;Tópicos Complementares de Engenharia Elétrica;B26;4;10;José Samia
+13;N;Tópicos Complementares de Engenharia Elétrica;B24;4;10;José Samia
 13;N;Fontes alternativas de Energia;B26;6;10;Fernando Sá
 13;N;Compatibilidade e Interferência Eletromagnética;B26;4;8, 9;Jorge Morgado
 13;N;Proteção do Sistema Elétrico de Potência;B26;4;9;Jorge Morgado
 13;N;Instalações Elétricas;B17;5;7, 8;Eduardo Garcia
 13;N;Controle e Automação de Processos Industriais;D29;2;4, 5, 7;Everaldo Barros
-13;N;Metodologia Científica;D29;2;4;Ana Helena
+13;N;Metodologia Científica;B13;2;4;Ana Helena
 13;N;Conversão Eletromecânica de Energia;D29;2;7;Jorge Morgado
-13;N;Probabilidade e Estatística;D32;3;3;Débora Santanna
+13;N;Probabilidade e Estatística;D32;3;3;Debora Cervelline
 13;N;Fenômenos de Transporte;D33;5;3, 5;Luciana Lobato
+13;N;Engenharia e Profissão;B19;3;1;José Luiz
+13;N;Legislação, Segurança do Trabalho e Meio Ambiente;B20;6;1;José Luiz
 14;M;Formação Integral em Saúde;A10;4;3;Karina Lopes
 14;N;Psicologia Aplicada à Saúde;A10;4;7;Ricardo Mendes
-14;N;Formação Integral em Saúde;B25;2;3;Karina Lancia
+14;N;Formação Integral em Saúde;A13;2;3, 5;Karina Lancia
 14;M;Análises Laboratoriais Bioquímicas e Hematológicas;A11;6;5, 6, 7;Karla Oliveira
 14;M;Relações Parasitas e Hospedeiros;A11;3;6;Mary Saldanha
 14;N;Análises Laboratoriais Bioquímicas e Hematológicas;A11;2;2, 6, 7;Karla Oliveira
@@ -317,7 +331,6 @@
 14;M;Ciên. Morfofuncionais dos Sistemas Imune e Hematológico;A12;6;3;Ivanete Sbruzzi
 14;M;Assistência Farmacêutica;A13;2;6;Ana Zanutti
 14;M;Gerenciamento e Controle de Qualidade;A13;3;7;Lincoln Cardoso
-14;N;Formação Integral em Saúde;A13;2;5;Karina Lancia
 14;M;Saúde Coletiva;A14;4;5;Bruno Prianti
 14;N;Química Orgânica Aplicada à Farmácia;A15;5;2, 3;Karla Oliveira
 14;N;Química Analítica;A15;3;2, 3;Alfredo Vespa
@@ -325,53 +338,49 @@
 14;M;Química Orgânica Aplicada à Farmácia;A16;3;2, 3;Alfredo Vespa
 14;N;Hematologia Clínica;A17;3;8, 9;Ricardo Belo
 14;N;Fitoterapia;A17;5;6, 7;Vitor Silva
-14;N;Farmacognosia;A17;3;4, 5;Ana Zanutti
+14;N;Farmacognosia;B26;3;4, 5;Ana Zanutti
 14;M;Farmácia Clínica;A18;6;2;Lincoln Cardoso
 14;M;Metodologia Científica;A19;2;3;Daniel Ramos
 14;M;Farmacognosia;A19;3;5;Ana Zanutti
-14;N;Ciên. Morfofuncionais dos Sistemas Nervoso e Cardiorrespiratório;B25;4;3;Gislaine Gonçalves
-14;N;Ciên. Morfofuncionais dos Sistemas Imune e Hematológico;B25;2;3;Ivanete Sbruzzi
+14;N;Ciên. Morfofuncionais dos Sistemas Nervoso e Cardiorrespiratório;B26;4;3;Gislaine Gonçalves
+14;N;Ciên. Morfofuncionais dos Sistemas Imune e Hematológico;B26;2;3;Ivanete Sbruzzi
 14;N;Relações Parasitas e Hospedeiros;B27;4;2;Mary Saldanha
 14;M;Homem, Cultura e Sociedade;B28;6;3;Amália Fernanda
-14;N;Homem, Cultura e Sociedade;B28;6;3, 6;Daniel Ramos
+14;N;Homem, Cultura e Sociedade;B26;6;3, 6;Daniel Ramos
 14;N;Química Farmacêutica e Planejamento de Fármacos;B29;4;8, 9;Lincoln Cardoso
-14;M;Fisiopatologia e Farmacoterapia das Doenças Infecciosas, Imunes e Virais;B30;4;2;Lincoln Cardoso
+14;M;Fisiopatologia e Farmacoterapia;B30;4;2;Lincoln Cardoso
 14;M;Ciên. Morfofuncionais dos Sistemas Nervoso e Cardiorrespiratório;B31;4;3;Gislaine Gonçalves
 14;N;Gerenciamento e Controle de Qualidade;B35;3;7;Lincoln Cardoso
-14;M;Cosmetologia;C36;4;7;Gislaine Gonçalves
+14;M;Cosmetologia;B28;4;7;Gislaine Gonçalves
 14;N;Tecnologia Farmacêutica I;C41;5;5;Lincoln Cardoso
 14;N;Saúde Coletiva;C44;4;5;Karina Lancia
 14;N;Farmacologia dos Sistemas;C45;2;5;Ana Zanutti
 14;N;Microbiologia;D46;4;4;Guilherme Patto
-14;N;Tecnologia Farmacêutica I;D47;5;4;Lincoln Cardoso
 14;N;Formação Integral em Saúde;D50;2;4;Luciana Melo
 14;N;Patologia Geral;D50;6;8, 9;Guilherme Patto
-14;M;Estágio Supervisionado - Assistência;;2;5;sem
-14;M;Estágio Supervisionado - Gestão Farmacêutica;;2;7;sem
 14;M;Formação Integral em Saúde;A10;4;5;Luciana Melo
-14;M;Estágio Supervisionado - Programas Estratégicos;;4;6;sem
-14;N;Estágio Supervisionado em Análises Clínicas;;2;8;sem
-14;N;Garantia e Controle de Qualidade ;;2;9;Lincoln Cardoso
+14;N;Garantia e Controle de Qualidade ;B35;2;9;Lincoln Cardoso
 14;N;Estágio Supervisionado Programas Estratégicos;;3;6;sem
-14;N;Estágio Supervisionado Assistência Farmaceutica;;4;6;sem
-14;N;Estágio Supervisionado Assistência Farmaceutica;;6;5;sem
-15;M;Formação Integral em Saúde;A10;4;4, 6;Karina Lancia
-15;N;Est. Cur. Superv. na Atenção Básica;;2;8, 9;sem
-15;N;Est. Cur. Superv. Ambulatorial I;;3;8, 9;sem
+14;M;Farmacognosia dos Sistemas;A19;3;5;Ana Zanutti
+14;N;Saúde Coletiva;C37;2;1;Luíz Vieira
+14;N;Formação Integral em Saúde;C42;3;1;Josely Camara
+14;N;Ciên. Morfofuncionais dos Sistemas Nervoso e Cardiorrespiratório;A13;4;1;Ivanete
+14;N;Química Geral;B29;6;1;Alfredo Vespa
+15;M;Formação Integral em Saúde;A13;4;1, 4, 6;Karina Lancia
 15;N;Psicologia Aplicada à Saúde;A10;4;3, 4, 6;Ricardo Mendes
 15;M;Diagnóstico Cinético-Funcional e Imaginologia - Membros Infer. e Col. Vertebral;A11;4;5;Bruno Prianti
 15;M;Recursos Terapêuticos Bioelétricos/Térmicos/Mecânicos;A11;2;4, 5;Gustavo Leme
 15;M;Fisioterapia na Atenção Terciária;A11;5;5, 7;Liliane Marcon
 15;N;Práticas Fisioterapêuticas na Atenção Primária;A11;4;2, 8;Liliane Marcon
-15;N;Fisioterapia na Saúde do Atleta;A12;2;10;André Fujita
+15;N;Fisioterapia na Saúde do Atleta;A17;2;10;André Fujita
 15;N;Ética e Deontologia;A12;5;2, 6;Maria Romão
 15;N;Primeiros Socorros;A12;3;2, 10;Jorge Junior
 15;N;Prótese e Órtese;A12;6;5, 6;Maria Romão
 15;N;Cinesioterapia Geral;A13;6;2, 3, 4;André Fujita
 15;N;Fisioterapia Cardiopulmonar na Saúde do Adulto;A13;3;7;Liliane Marcon
 15;M;Saúde Coletiva;A14;4;5;Bruno Prianti
-15;M;Metodologia Científica;A14;3;3, 7;Daniel Ramos
-15;N;Ética Aplicada à Fisioterapia;A14;4;10;Matheus Braga
+15;M;Metodologia Científica;B31;3;3, 7;Daniel Ramos
+15;N;Ética Aplicada à Fisioterapia;D48;4;10;Matheus Braga
 15;M;Primeiros Socorros;A15;3;10;Jorge Junior
 15;M;Comunicação em Saúde;A15;3;10;Josely Camara
 15;M;Exercício Profissional na Fisioterapia;A18;5;10;Hélio Tibúrcio
@@ -380,15 +389,15 @@
 15;M;Psicologia Aplicada à Saúde;A19;4;3, 4, 6;Ricardo Mendes
 15;M;Cinesioterapia Geral;A19;6;3;André Fujita
 15;M;Metodologia Científica;A19;2;6;Daniel Ramos
-15;M;Ética e Deontologia;B25;6;4, 6;Amália Fernanda
-15;N;Exercício Profissional na Fisioterapia;B25;5;10;Hélio Tibúrcio
-15;M;Ética Aplicada à Fisioterapia;B27;4;10;Matheus Braga
+15;M;Ética e Deontologia;B33;6;4, 6;Amália Fernanda
+15;N;Exercício Profissional na Fisioterapia;D50;5;10;Hélio Tibúrcio
+15;M;Ética Aplicada à Fisioterapia;A16;4;10;Matheus Braga
 15;M;Tópicos Especiais em Fisioterapia II;B27;3;4, 5;Gislaine Priscila
 15;N;Recursos Terapêuticos Bioelétricos/Térmicos/Mecânicos;B27;2;4, 5;Gustavo Leme
 15;N;Recursos Terapêuticos Biohídricos;B27;3;4, 5;Gislaine Priscila
 15;N;Metodologia Científica;B27;5;3;Gislaine Andrade
 15;N;Cinesioterapia Aplicada;B27;2;5;Gustavo Leme
-15;M;Homem, Cultura e Sociedade;B28;6;4, 6;Amália Fernanda
+15;M;Homem, Cultura e Sociedade;B33;6;4, 6;Amália Fernanda
 15;M;Ciên. Morfofuncionais do Aparelho Locomotor - Membros Infer. e Coluna Vertebral;B28;2;3;Matheus Braga
 15;M;Ciên. Morfofuncionais do Aparelho Locomotor - Membros Super., Cabeça e Tronco;B28;5;3;André Fujita
 15;M;Fisioterapia na Saúde do Neonato;B29;2;7;Liliane Marcon
@@ -402,112 +411,126 @@
 15;N;Saúde Coletiva;C44;4;5;Karina Lancia
 15;N;Formação Integral em Saúde;D50;2;2;Luciana Melo
 15;N;Formação Integral em Saúde;D59;2;4;Fátima Arthuzo
-16;M;Matérias Primas, Higiene e Controle de Alimentos;C37;2;2;Amália
+15;N;Saúde Coletiva;C37;2;1;Luís Vieira
+15;N;Formação Integral em Saúde;C42;3;1;Josely Camara
+15;N;Ciências Moleculares e Celulares;A13;4;1;Ivanete
+15;N;Praticas Fisioterapêuticas na Atenção Primaria;C36;6;1;Hélio Tibúrcio
+15;M;Saúde Coletiva;C37;2;1;Luís Vieira
+15;M;Ciências Moleculares e Celulares;C42;3;1;Josely Camara
+15;M;Práticas Fisioterapêuticas na Atenção Primária;B30;6;1;Hélio Tibúrcio
+16;M;Matérias Primas, Higiene e Controle de Alimentos;C38;2;1, 2;Amália
 16;M;Cozinha Brasileira;C37;4;2;Claudia Santos
 16;M;Prática Comportamental;C37;3;2;Adriano Nogueira
-16;M;Planejamento Funcional de Cozinhas e Restaurantes;C37;6;2;Claudia Santos
+16;M;Planejamento Funcional de Cozinhas e Restaurantes;C38;6;1, 2;Claudia Santos
 16;M;Serviços de Bebidas;C37;5;2;Rafael Ferro
-16;N;Matérias Primas, Higiene e Controle de Alimentos;C38;5;2;Amália
-16;N;Prática Comportamental;C38;3;2;Adriano Nogueira
-16;N;Planejamento Funcional de Cozinhas e Restaurantes;C38;6;2;Claudia Santos
-16;N;Cozinha Brasileira;C38;4;2;Claudia Santos
-16;N;Serviços de Bebidas;C38;2;2;Luis Pimentel
+16;N;Matérias Primas, Higiene e Controle de Alimentos;D56;5;2;Amália
+16;N;Prática Comportamental;D56;3;2;Adriano Nogueira
+16;N;Planejamento Funcional de Cozinhas e Restaurantes;D55;6;2;Claudia Santos
+16;N;Cozinha Brasileira;Bebidas;4;2;Claudia Santos
+16;N;Serviços de Bebidas;D56;2;2;Luis Pimentel
+16;M;Antropologia e História da Alimentação;C38;3;1;Rafael Ferro
+16;M;Administração Aplicada à Gastronomia;C38;4;1;Luis Pimentel
+16;M;História da Alimentação e da Gastronomia Brasileira;C38;5;1;Adriano Nogueira
 17;N;Inovações em Aplicação de Pessoas;C43;4;3, 4;José Quinquiolo
-17;N;Projeto Integrado II;D51;4;2;Rinaldo Junior
-17;N;Responsabilidade Social e Ambiental;B34;5;3, 4;sem
+17;N;Projeto Integrado II;D50;4;2;Rinaldo Junior
+17;N;Responsabilidade Social e Ambiental;B35;5;3, 4;Alison Lucas
 17;N;Gestão da Inovação;B35;5;3, 4;Alison Lucas
-17;N;Raciocínio Lógico Matemático;D51;5;2;Flávio Faciolla
-17;N;Desenvolvimento de Pessoas;C41;2;2, 3, 4;Filipe Santos
+17;N;Raciocínio Lógico Matemático;B33;5;2;Flávio Faciolla
+17;N;Desenvolvimento de Pessoas;C42;2;2, 3, 4;Filipe Santos
 17;N;Auditoria e Consultoria em RH;D49;6;3, 4;Alison Lucas
-17;N;Modelos de Gestão;D59;6;2;sem
-17;N;Gestão de Pessoas;C39;3;2;sem
+17;N;Modelos de Gestão;C38;6;2;André Aquino
+17;N;Gestão de Pessoas;C39;3;1, 2;Malheiros
 17;N;Coaching e Mentoring;D46;3;3, 4;Rinaldo Junior
+17;N;Legislação Social e Trabalhista;C38;2;1;Robernei Lima
+17;N;Desenvolvimento de Pessoas;D51;4;1;***
 18;N;Língua Inglesa IV;A18;4;6, 7;Keila Pavão
 18;N;História da Língua Portuguesa;D49;5;6, 7;Patricia Botelho
 19;N;Logística e Comércio Internacional;A16;2;2, 4;Alison Lucas
-19;N;Matemática Financeira;B30;4;4;Antonio Junior
-19;N;Sistemas de Informação Gerencial;B30;4;4;Antonio Junior
+19;N;Matemática Financeira;C38;4;4;Antonio Junior
+19;N;Sistemas de Informação Gerencial;B30;4;4;Alison Lucas
 19;N;Gestão da Inovação;B35;5;4;Alison Lucas
-19;N;Gestão de Pessoas;C39;3;2;sem
+19;N;Gestão de Pessoas;C39;3;1, 2;Malheiros
 19;N;Gestão da Produção;C45;3;4;José Quinquiolo
-19;N;Projeto Integrado IV;D51;6;4;Rinaldo Junior
-19;N;Projeto Integrado II;D51;4;2;Rinaldo Junior
-19;N;Raciocínio Lógico Matemático;D51;5;2;Flávio Faciolla
-19;N;Modelos de Gestão;D59;6;2;sem
-20;N;Homem, Cultura e Sociedade;B28;6;4;Daniel Ramos
-20;N;Matemática Financeira;B30;4;4;Antonio Junior
-20;N;Composto Mercadológico;B35;5;4;José Quinquiolo
+19;N;Projeto Integrado IV;D50;6;4;Rinaldo Junior
+19;N;Projeto Integrado II;D50;4;2;Rinaldo Junior
+19;N;Raciocínio Lógico Matemático;B33;5;2;Flávio Faciolla
+19;N;Modelos de Gestão;C38;6;1, 2;André Aquino
+19;N;Legislação Social e Trabalhista;C38;2;1;Robernei Lima
+19;N;Sistemas de Informação Gerencial;C38;5;1;Mauricio Guerreiro
+20;N;Homem, Cultura e Sociedade;B26;6;4;Daniel Ramos
+20;N;Matemática Financeira;B30;4;1, 4;Antonio Junior
+20;N;Composto Mercadológico;D55;5;4;José Quinquiolo
 20;N;Marketing Estratégico;C43;3;4;Filipe Santos
-20;N;Legislação Social e Trabalhista;D49;2;4;Robernei Lima
-20;N;Projeto Integrado IV;D51;2;4;Rinaldo Junior
-21;N;Políticas e Programas Aplicados a Saúde e Nutrição;A14;5;2, 3, 4;sem
+20;N;Legislação Social e Trabalhista;C38;2;1, 4;Robernei Lima
+20;N;Projeto Integrado IV;D49;2;4;Rinaldo Junior
+20;N;Modelos de Gestão;C38;6;1;André Aquino
+20;N;Gestão de Pessoas;C39;3;1;Malheiros
+21;N;Políticas e Programas Aplicados a Saúde e Nutrição;A14;5;2, 3, 4;Ana Oliveira
 21;N;Técnica Dietética;A14;6;3, 4;Amália
-21;N;Nutrição, Ciência e Profissão;A17;6;2;Amália
-21;N;Educação Alimentar e Nutricional;A18;2;2, 3;sem
-21;N;Ciên. Morfofuncionais dos Sistemas Imune e Hematológico;B25;2;2, 3;sem
-21;N;Ciências Moleculares e Celulares;B29;3;2;Ivanete
+21;N;Nutrição, Ciência e Profissão;A17;6;1, 2;Ana Oliveira
+21;N;Educação Alimentar e Nutricional;A18;2;2, 3;Amália
+21;N;Ciên. Morfofuncionais dos Sistemas Imune e Hematológico;B26;2;2, 3;Ivanete
+21;N;Ciências Moleculares e Celulares;B29;3;2;Luiz Tross
 21;N;Ética, Política e Cidadania;B31;4;3;Gabriel Pinelli
 21;N;Saúde Coletiva;C44;4;3, 4;Karina Lância
 21;N;Gastronomia Aplicada a Nutrição;D49;4;2, 4;Amália
 21;N;Formação Integral em Saúde;D50;2;2;Luciana Melo
+21;N;Saúde Coletiva;C37;2;1;Luís Vieira
+21;N;Formação Integral em Saúde;C42;3;1;Josely Camara
+21;N;Ciências Moleculares e Celulares;A13;4;1;Ivanete
 22;M;Princípios Teóricos e Metodológicos do Ensino de História;A12;4;6, 7;Patricia Botelho
 22;M;Princípios Teóricos e Metodológicos do Ensino de Geografia;A12;2;6, 7;Patricia Botelho
 22;M;Ensino da Natureza e da Sociedade na Educação Infantil;A16;6;6, 7;Amanda Zarzur
-22;M;Aprendizagem das Ciências Naturais;A18;5;6, 7;Amanda Zarzur
+22;M;Aprendizagem das Ciências Naturais;A12;5;6, 7;Amanda Zarzur
 22;N;Princípios Teóricos e Metodológicos do Ensino de História;A19;3;6, 7;Patricia Botelho
 22;N;Princípios Teóricos e Metodológicos do Ensino de História;A19;4;6, 7;Patricia Botelho
 22;N;Metodologia Científica;B27;6;3;Flávio Faciolla
 22;N;Metodologia Científica;B27;5;4, 5;Gislaine Priscila
 22;M;Princípios Teóricos e Metodológicos do Ensino de História;B29;3;6, 7;Patricia Botelho
-22;M;Fundamentos da Gestão Educacional e Coordenação Pedagógica;B29;3;6, 7;Melissa Sampaio
+22;M;Fundamentos da Gestão Educacional e Coordenação Pedagógica;B29;3;6;Melissa Sampaio
 22;M;Princípios Teóricos e Metodológicos do Ensino de Geografia;B29;3;6, 7;Patricia Botelho
-22;N;Prát. Pedag. em Pedagogia - Condições de Aprendizagem na Educação Infanti;B30;3;2, 3, 5;Melissa Sampaio
+22;N;Prát. Pedag. em Pedagogia - Condições de Aprendizagem na Educação Infanti;B30;3;1, 2, 3, 5;Melissa Sampaio
 22;N;Ética, Política e Cidadania;B31;3;4;Daniel Ramos
 22;N;Didática;B34;4;2, 3, 4;Natália Quinquiolo
-22;N;Aprendizagem da Língua Portuguesa;C39;6;2, 5;Keila Pavão
-22;N;Letramentos e Alfabetização;C39;5;2, 3;Keila Pavão
+22;N;Aprendizagem da Língua Portuguesa;C39;6;1, 2, 5;Keila Pavão
+22;N;Letramentos e Alfabetização;C39;5;1, 2, 3;Keila Pavão
 22;N;Aprendizagem das Ciências Naturais;C39;2;3, 5;Melissa Sampaio
 22;N;Filosofia da Educação;C43;2;3, 4, 5;Daniel Ramos
 22;N;Prát. Pedag. - Processo de Ensinar e Aprender;C45;5;6, 7;Melissa Sampaio
 22;N;Ensino da Natureza e da Sociedade na Educação Infantil;D46;6;6, 7;Natália Quinquiolo
 22;N;História da Educação;D46;5;4, 5;Natália Quinquiolo
-23;N;Estágio Básico II;;2;5;sem
+22;N;Libras;D49;2;1;Patricia Botelho
 23;N;Psicologia Hospitalar;A11;6;4, 5, 7;Thais Arcas
 23;N;Formação Integral em Saúde;A13;2;4;Karina Lancia
-23;M;Ética, Política e Cidadania;;6;3;Marcela Dupont
-23;M;Medidas e Avaliação em Psicologia III;A15;2;4, 5;Natália Costa
-23;M;Matrizes do Pensamento em Psicologia - Psicanálise;A19;5;3, 4, 5;Ricardo Mendes
+23;M;Ética, Política e Cidadania;A14;6;3;Marcela Dupont
+23;M;Medidas e Avaliação em Psicologia III;D59;2;4, 5;Natália Costa
+23;M;Matrizes do Pensamento em Psicologia - Psicanálise;D59;5;3, 4, 5;Ricardo Mendes
 23;N;Orientação Profissional;A19;2;4, 5, 7;Thais Arcas
-23;M;Desenvolvimento Humano II;B25;4;2, 3, 4;Gabriel Pinelli
-23;M;Formação Integral em Saúde;B28;3;2, 4;Francine Costa
-23;M;Processos Psicológicos Básicos;B30;2;2;Gabriel Pinelli
-23;M;Psicologia Hospitalar;B30;6;4, 5;Marcela Dupont
-23;M;Bases Biológicas do Comportamento;B30;5;2;Mary Saldanha
-23;M;Orientação Profissional;B30;6;4;Thais Arcas
+23;M;Desenvolvimento Humano II;D59;4;2, 3, 4;Gabriel Pinelli
+23;M;Formação Integral em Saúde;B28;3;1, 2, 4;Francine Costa
+23;M;Processos Psicológicos Básicos;B30;2;1, 2;Gabriel Pinelli
+23;M;Psicologia Hospitalar;D59;6;4, 5;Marcela Dupont
+23;M;Bases Biológicas do Comportamento;B30;5;1, 2;Mary Saldanha
+23;M;Orientação Profissional;D59;6;4;Thais Arcas
 23;N;Ética, Política e Cidadania;B31;4;3;Gabriel Pinelli
 23;M;Aconselhamento e Orientação em Psicologia;B32;4;5;Marcela Dupont
 23;N;Psicologia Escolar e Educacional;B32;4;5, 6, 7;Marcela Dupont
-23;N;Processos Psicológicos Básicos;B33;2;2, 6;Gabriel Pinelli
+23;N;Processos Psicológicos Básicos;B33;2;1, 2, 6;Gabriel Pinelli
 23;N;Medidas e Avaliação em Psicologia II;C36;2;3;Natália Costa
 23;N;Teorias e Técnicas Psicoterápicas Gerais;C36;5;6, 7;Thais Arcas
-23;N;História da Psicologia;C42;4;4;Natália Costa
-23;N;Bases Biológicas do Comportamento;C42;5;2;Mary Saldanha
+23;N;Bases Biológicas do Comportamento;C42;5;1, 2;Mary Saldanha
 23;N;Diagnóstico e Intervenção em Psicologia;C44;3;7;Natália Costa
-23;N;História da Psicologia;C45;4;2;Natália Costa
+23;N;História da Psicologia;C45;4;1, 2, 4;Natália Costa
 23;N;Matrizes do Pensamento em Psicologia - Psicanálise;D48;5;3, 4, 5;Ricardo Mendes
 23;N;Matrizes do Pensamento em Psicologia - Behaviorismo;D48;3;3, 4, 5;Gabriel Pinelli
-23;N;Neuroanatomofisiologia;D51;3;2;Isabel Romão
-23;N;História da Psicologia;;6;6;sem
-23;N;Estágio Básico III;;6;6;sem
-23;N;Estágio Básico IV;;6;7;sem
-23;M;Métodos Quantitativos;;3;3;sem
-23;M;Estágio Básico I;;3;4;sem
-23;M;Estágio Básico II;;3;5;sem
-24;N;Criação e Produção Publicitária em Rádio;E40;5;2, 3, 4, 5, 7;Adriano Barreto
-24;N;Redação Publicitária Básica;E41;3;2, 3;Renata Muniz
-24;N;Legislação e Ética na Comunicação;E41;2;2;Adriano Barreto
-24;N;Computação Gráfica;E42;6;3, 8;Arison Sonagere
+23;N;Neuroanatomofisiologia;B34;3;2;Isabel Romão
+23;N;Formação Integral em Saúde;C42;3;1;Josely Camara
+23;M;História da Psicologia;;4;1;Natália Costa
+24;N;Criação e Produção Publicitária em Rádio;E42;5;1, 2, 3, 4, 5, 7;Adriano Barreto
+24;N;Redação Publicitária Básica;E41;3;1, 2, 3;Renata Muniz
+24;N;Legislação e Ética na Comunicação;E41;2;1, 2;Adriano Barreto
+24;N;Computação Gráfica;E42;6;1, 3, 8;Arison Sonagere
 24;N;Produção Publicitária para TV e Cinema;E41;6;2, 4, 5, 6, 7;José Candelaria
-24;N;Planejamento e Gestão Estratégica;E41;5;6;Filipe Santos
+24;N;Planejamento e Gestão Estratégica;Ncom;5;6;Filipe Santos
 24;N;Marketing Digital;E42;4;3, 4, 5, 6;André Gollner
 24;N;Análise do Discurso;E42;2;5;José Candelaria

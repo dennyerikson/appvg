@@ -1,36 +1,26 @@
 import csv
-from blo.models import Post, Horario
+from blo.models import Post, Horario, Courses
 
-# vg_list = []
-
-# with open('VG24.csv','r') as f:
-#     r = csv.DictReader(f)
-
-#     for [r_cpf] in r:
-#         vg_list.append('{}'.format(r_cpf))
+def integer(texto):
+    lista = []
+    numero = 2
+    for i in range(2,30):
+        lista.append("{}".format(i))
+    print(texto)
+    if texto in lista:
+        inteiro = lista.index(texto)
+        numero = int(lista[inteiro])
     
-#     f.close()
+    # if numero == 0:
+    #     numero = 2
+        
+    return numero
 
-# print(vg_list)
-
-
-listaCurso = []
-lista_Curso = []
-
-Curso_csv = csv.reader(open('BD_HORARIO.csv'), delimiter=';')
-for [curso, periodo, disciplina, sala, dia, serie, professor] in Curso_csv:
-    listaCurso.append('{};{};{};{};{};{};{}'.format(
-        curso, periodo, disciplina, sala, dia, serie, professor)
-    )
-i=0
-while i < len(listaCurso):
-    lista_Curso.append(str(listaCurso[i]).split(';'))
-    i+=1
 
 lista = []
 lista_stt = []
 
-dados_csv = csv.reader(open('p.csv'), delimiter=';')
+dados_csv = csv.reader(open('BD_HORARIO_ATUAL.csv'), delimiter=';')
 for [curso, periodo, disciplina, sala, dia, serie, professor] in dados_csv:
     lista.append('{};{};{};{};{};{};{}'.format(
         curso, periodo, disciplina, sala, dia, serie, professor)
@@ -46,13 +36,16 @@ while i < len(lista_stt):
 # while i < 3:
     index = lista_stt[i]
     index[0] = index[0]
+    print(integer(index[0]))
+    
 
-    indexCurso = lista_Curso[i]
-    indexCurso[0] = indexCurso[0]
+    id_course = Courses.objects.get(value=integer(index[0]))
+   
 
-    try:
+    if id_course:
         query = Horario.objects.create(
-        curso=indexCurso[0],
+        id_course_id=id_course.value,
+        curso=id_course.name,
         periodo=index[1],
         disciplina=index[2],
         sala=index[3],
@@ -60,9 +53,8 @@ while i < len(lista_stt):
         serie=index[5],
         professor=index[6]
         )
-        print('index: {} Sucess! - Curso:{} | dia:{} '.format(i, indexCurso[0], index[4]))
-    except:
-        print('index: {} Não cadastrado! - Curso:{} | dia:{} '.format(i, indexCurso[0], index[4]))
+        print('index: {} Sucess! - Curso:{} | dia:{} '.format(i, index[0], index[4]))
+  
     i+=1
 # terminal$ python manage.py shell < app_vg/blo/shell_vg.py
 # no projeto no terminal$ python manage.py shell < blo/shell_vg.py

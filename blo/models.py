@@ -55,7 +55,26 @@ class Cursos(models.Model):
     cod_curso = models.CharField(max_length=10)
     nome_curso = models.CharField(max_length=150)
 
+
+class Courses(models.Model):
+
+    def UNIDADE():
+        lista = [
+            ('01','VG'),
+            ('02','CS'),
+            ('03','UNOPAR'),
+        ]
+        return lista
+
+    value = models.IntegerField(unique=True)
+    name = models.CharField(max_length=150)
+
+    def __str__(self):
+        return self.name
+
+
 class Horario(models.Model):
+    id_course = models.ForeignKey(Courses, on_delete=models.CASCADE)
     curso = models.CharField(max_length=150)
     periodo = models.CharField(max_length=2)
     disciplina = models.CharField(max_length=150)

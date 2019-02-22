@@ -6,6 +6,7 @@ from .forms import CandidatosForm
 from django.db.models.sql import AggregateQuery
 from datetime import date
 from django.utils import timezone
+from django.contrib import messages
 
 # Create your views here.
 
@@ -137,3 +138,63 @@ def print_graphs(request):
 # while i < len(listaCurso):
 #     lista_Curso.append(str(listaCurso[i]).split(';'))
 #     i+=1
+
+import csv, io
+def course_upload(request):
+    csv_file = ''
+    template = 'blo/course_upload.html'
+
+    prompt = {
+        'order': 'Ordem do .csv'
+    }
+    
+    if request.method == "GET":
+        return render(request, template, prompt)
+
+    csv_file = request.FILES['file']
+    if not csv_file.name.endswith('.csv'):
+        messages.error(request, "Por favor insira um arquivo .csv válido")
+
+    print("csv get", csv_file)
+    
+    if csv_file:
+        if request.method == "POST":
+
+            data_set = csv_file.read().decode('UTF-8')
+            io_string = io.StringIO(data_set)
+            next(io_string)
+
+            lista_horario = []
+
+            for [curso, periodo, disciplina, sala, dia, serie, professor] in csv.reader(
+                io_string, delimiter=';', quotechar="|"):
+
+                course = Courses.objects.get(pk=curso)
+
+                h = Horario(
+                    curso=course.name,
+                    id_course_id=curso,
+                    periodo=periodo,
+                    disciplina=disciplina,
+                    sala=sala,
+                    dia=dia,
+                    serie=serie,
+                    professor=professor
+                )
+                lista_horario.append(h)
+
+            Horario.objects.bulk_create(lista_horario)
+            horarios = Horario.objects.all()
+            # messages.SUCCESS(request, 'atualizado com sucesso')
+            return redirect('/')
+            
+
+
+    
+    context = {}
+    return render(request, template, context)
+
+
+
+
+

@@ -536,5 +536,29 @@ $(document).ready(function(){
       
             </div> -->
             <!-- MODAL SEARCH -->
+             <!-- Modal Obrigado -->
+      <div id="obrigado" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+              <div class="success"> 
+                  {% for message in messages %}          
+                  <h4 class=""><i class="glyphicon glyphicon-ok"></i> <b> &emsp; {{ message|safe}}</b></h4>    
+                  {% endfor %}       
+              </div>
+          </div>
+      </div>
+      <!-- Modal Obrigado -->
+
+    {% if messages %}
+      
+    <script>
+        $(document).ready(function(){
+            $('#obrigado').modal('show');
+            setTimeout(function(){
+                $('#obrigado').modal('hide');
+            }, 3000);     
+        });           
+        </script>
+      
+    {% endif %}
 
 {% endblock %}

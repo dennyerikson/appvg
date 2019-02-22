@@ -15,4 +15,5 @@ urlpatterns = [
     path('print_js/', print_js),
     path('confirm_curM_js', confirm_curM_js),
     path('confirm_curN_js', confirm_curN_js),
+    path('course_upload', views.course_upload, name="course_upload")
 ]
